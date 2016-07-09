@@ -10,13 +10,13 @@
 	padding: 0;
 	margin: 0;
 }
+
 @color1: #fff;
 @color2: #000;
-@color3 : #fcac45;
-@color4: #292929;
-@color5 :#111111;
-@color6 :#6c6c6c;
-@color7 :#b2b2b2;
+@color3 : #303030;
+@color4: #7657a5;
+@color5 :#727272;
+
 .c1{
 	color: @color1;
 }
@@ -32,51 +32,31 @@
 .c5{
 	color: @color5;
 }
-.c6{
-	color: @color6;
-}
+
 .bgr2{
 	background-color: @color2;
 }
 .absolute{
 	position: absolute !important;
 }
+.relative{
+	position: relative;
+}
 .none{
 	display: none;
 }
 /* add font here */
 @font-face{
-	font-family: "OpenSans Bold" ;
-	src:url("fonts/OpenSans-Bold.ttf") format("truetype");
-}
-@font-face{
-	font-family: "OpenSans ConldBold" ;
-	src:url("fonts/OpenSans-CondBold.ttf") format("truetype");
+	font-family: "Helvetica" ;
+	src:url("fonts/helvetica/Helvetica.otf") format("truetype");
 }
 
 @font-face{
-	font-family: "OpenSans CondLight" ;
-	src:url("fonts/OpenSans-CondLight.ttf") format("truetype");
+	font-family: "PT Sans" ;
+	src:url("fonts/ptSans/PTS55F.ttf") format("truetype");
 }
 
-@font-face{
-	font-family: "OpenSans Italic" ;
-	src:url("fonts/OpenSans-Italic.ttf") format("truetype");
-}
 
-@font-face{
-	font-family: "OpenSans Regular" ;
-	src:url("fonts/OpenSans-Regular.ttf") format("truetype");
-}
-@font-face{
-	font-family: "OpenSans Light" ;
-	src:url("fonts/OpenSans-Light.ttf") format("truetype");
-}
-
-@font-face{
-	font-family: "OpenSans semibold" ;
-	src:url("fonts/OpenSans-Semibold.ttf") format("truetype");
-}
 .f20{
 	font-size: 20px;
 }
@@ -112,7 +92,7 @@
 }
 
 body{
-	// font-family: "OpenSans" ,Sans-serif;
+	
 }
 
 .border-radius(@radius){
@@ -120,464 +100,12 @@ body{
 	-webkit-border-radius:@radius;
 	-moz-border-radius: @radius; 
 }
-/* Welcome here */
-.wellcome{
-	height: 790px;
-	background-color: #111111;
-
-	.navbar{
-		padding: 60px 0;
-		ul{
-			li{	
-				position: relative;
-				overflow: hidden;
-				a{
-					text-transform: uppercase;
-					// padding: 15px 12px;
-				}
-				&:before{
-					content: '';
-					border: 2px solid #444242;
-					position: absolute;
-					bottom: 0px ; right: 50%;left: 0px;
-					z-index: 1;
-					opacity: 0;
-					transform: translateX(-100px);
-					transition: all 1s;
-				}
-				&:after{
-					content: '';
-					border: 2px solid @color3;
-					position: absolute;
-					bottom: 0px ; right: 0px;left: 50%;
-					z-index: 1;
-					opacity: 0;
-					transform: translateX(100px);
-					transition: all 1s;
-				}
-				&:hover{
-					&:before, &:after{
-						opacity: 1;
-						transform: translateX(0);
-						transition: all 0.6s;
-					}
-				}
-			}
-			li.active{
-				position: relative;
-
-				&:before{
-					content: '';
-					border: 2px solid #444242;
-					position: absolute;
-					bottom: 0px ; right: 50%;left: 0px;
-					z-index: 1;
-					opacity: 1;
-					transform: translateX(0);
-					transition: all 1s;
-				}
-				&:after{
-					content: '';
-					border: 2px solid @color3;
-					position: absolute;
-					bottom: 0px ; right: 0px;left: 50%;
-					z-index: 1;
-					opacity: 1;
-					transform: translateX(0);
-					transition: all 1s;
-				}
-			}
-		}
-	}
-}
-/* Header-content here */
-.header-content{
-	
-	margin-top: 290px;
-	margin-bottom: 270px;
-	span{
-		font-family: "OpenSans Light" ;
-		font-size: 44px;
-		text-transform: uppercase;
-		color : #999999;
-		span{
-			font-family: "OpenSans Bold" ;
-			color: @color3;
-		}
-	}
-	p{
-		color: #fff;
-	}
-}
-
-#owl-demo-3{
-	position: absolute;
-}
-.scrolldown{
-	i{
-		font-weight: 100;
-		color: #fff;
-		font-size: 40px;
-	}
-}
-
-.about-us{
-	overflow: hidden;
-	height: 610px;
-	ont-family: "OpenSans Regular" ;
-	background-color: #fff;
-	padding: 100px 0 100px 0;
-	color: @color6;
-	ul{
-		margin-left: 20px;
-		li{
-			padding: 5px;
-	 		list-style-image: url('../assets/images/list-img.png');
-		}
-	}
-	.about-us-left{
-		img{
-			position: absolute;
-			
-		}
-	}
-	.about-us-right{
-		position: absolute;
-	}
-}
-
-
-.title{
-	h2{
-		font-family: "OpenSans semibold" ;
-		strong{
-			font-family: "OpenSans Light" ;
-		}
-	}
-	text-transform: uppercase;
-	padding-bottom: 20px;
-	font-weight: 100;
-}
-.my-btn{
-	border: 1px solid @color6;
-	background-color: transparent;
-	padding: 15px;
-	text-transform: uppercase;
-	position: relative;
-	overflow: hidden;
-	z-index: 1;
-	transition: all 0.5s;
-	.border-radius(4px);
-		
-	&:before{
-		content: '';
-		background-color: #000;
-		position: absolute;
-		top: 0;bottom: 0;right: 0;left: 0;
-		opacity: 0;
-		transform : translateY(-100px);
-		transition: all 1s;
-	}
-	&:hover{
-		color: #f2f2f2;
-		transition: all 0.5s;
-		&:before{
-			z-index: -1;
-			opacity: 1;
-			transform : translateY(0);
-			transition: all 1s;
-		}
-	}
-}
-.meet-our-team{
-	position: relative;
-	height: 725px;
-	font-family: "OpenSans Regular" ;
-	background-color: #070707;
-	color: #fff;
-	padding: 90px 0 90px 0;
-	.title{
-		// position: absolute;
-	}
-}
-#owl-demo{
-	position: absolute;
-	.item{
-		padding: 20px;
-	}
-}
-#owl-demo-2{
-	position: absolute;
-}
-.services{
-	overflow: hidden;
-	position: relative;
-	height: 735px;
-	padding: 90px 0 90px 0;
-	color: @color6;
-	h3{
-		font-family: "OpenSans semibold" ;
-		color: #000;
-		text-transform: uppercase;
-	}
-	.services-content{
-		position: absolute;
-	}
-}
-.clients{
-	height: 520px;
-	background-color: #0b0b0b;
-	padding: 90px 0 90px 0;
-}
-.our-work{
-	
-	padding: 90px 0 90px 0;
-	text-align: center;
-}
-.grid{
-	margin-left: -30px;
-	.grid-item-2{
-		overflow: hidden;
-		margin-bottom: 30px;
-		margin-left: 30px;
-		position: relative;
-		width: 255px;
-		float: left;
-		color: #b2b2b2;
-		img{
-			width: 100%;
-		}
-		h2{
-			font-size: 20px !important;
-			text-transform: uppercase;
-			color: #fff;
-		}
-		&:before{
-			content: '';
-			position: absolute;
-			top:0;left: 0;bottom: 0;right: 0;
-			background-color: #222222;
-			opacity: 0;
-			transform: translateY(-100px);
-			transition: all 0.5s;
-		}
-		.inner{
-			img{width: inherit !important;}
-			position: absolute;
-			top: 60%;left: 0;right: 0;
-			opacity: 0;
-			transform: translateX(-100px);
-			transition: all 0.5s;
-		}
-		.inner-2{
-			position: absolute;
-			top: 20%;left: 0;right: 0;opacity: 0;
-			transform: translateX(100px);
-			transition: all 0.5s;
-		}
-		&:hover{
-			.inner, .inner-2{
-				opacity: 1;
-				transform: translateX(0px);
-				transition: all 0.5s;
-			}
-			&:before{
-				opacity: 1;
-				transform: translateY(0px);
-				transition: all 0.5s;
-			}
-		}
-	}
-}
-.portfolio-list{
-	ul{
-		float: right;
-		li{
-			list-style-type: none;
-			float: left;
-			margin: 0 10px 0 10px;
-			a{
-				font-size: 18px;
-				text-transform: capitalize;
-				color: @color6;
-				text-decoration: none;
-				&:hover{
-					text-decoration: none;
-				}
-			}
-			
-		}
-		li.active{
-			a{color: #000;}
-		}
-	}
-}
-.fillter-by{
-	span{
-		font-family: "OpenSans semibold" ;
-		font-size: 18px;
-	}
-}
-.our-clients{
-	height: 560px;
-	text-align: center;
-	background-color: #0b0b0b;
-	padding: 90px 0 90px 0;
-	.our-clients-slider{
-		font-family: "OpenSans semibold" ;
-		font-size: 16px;
-		.client-detail{
-			text-transform: uppercase;
-			font-size: 16px;
-			color: #fff;
-		}
-		span.client-name{
-			color: @color7;
-			strong{
-				color: #fff;
-			}
-			
-		}
-	}
-
-}
-.contact{
-	height: 835px;
-	padding: 90px 0 90px 0;
-	color: @color6;
-	.input{
-		text-align: left;
-		display: flex;
-		justify-content: space-between;
-		input{
-			width: 360px;
-			height: 40px;
-			
-			border: 1px solid @color6;
-			background: none;
-		}
-	}
-	.mesager{
-		text-align: left;
-		textarea{
-			width: 100%;
-			height: 160px;
-			border: 1px solid @color6;
-			background: none;
-		}
-	}
-	.send{
-		button{
-			width: 165px;
-			background-color: #fcac45;
-			color: #fff;
-			border-radius: 0px;
-			border: none;
-		}
-	}
-	.important{color: red;}
-}
-.owl-theme .owl-controls .owl-page span{
-	border-radius: 0px !important;
-	background-color: #fff !important;
-}
-.owl-theme .owl-controls{
-	margin-top: 55px !important;
-}
-.footer{
-	color: @color6;
-	padding: 25px 0 25px 0;
-	background-color: #222222;
-	span{font-size: 12px;}
-	i{
-		width: 30px;height: 30px;
-		border : 3px solid @color6;
-		border-radius: 100%;
-		text-align: center;
-		padding: 	5px;
-		&:hover{
-			border : 3px solid #fff;
-			color: #fff;
-		}
-	}
-	a{
-		color: @color6;
-	}
-}
 
 
 
 
 @media screen and (min-width: 320px) and (max-width : 767px) {
-	.wellcome{
-		height: 500px;
-		.header-content{
-			    margin-top: 100px;
-   			    margin-bottom: 100px;
-		}
 	}
-	#owl-demo{position: static;}
-	.about-us{
-		height: auto;
-		ul{
-			li{
-				text-align: left;
-			}
-		}
-		.about-us-left{
-			text-align: center;
-			img{
-				position: static;
-				width: 100%;
-			}
-		}
-		.about-us-right{
-			position: static;
-			text-align: center;
-		}
-	}
-	.contact{
-		height: auto;
-		.input{
-			flex-direction: column;
-		}
-		input{width: 100% !important;}
-	}
-	.services{
-		height: auto;
-		.services-content{
-			position: static;
-		}
-	}
-	.clients{
-		#owl-demo-2{
-			position: static;
-		}
-	}
-	.our-work{
-		height: auto;
-		.portfolio-list ul{
-			display: flex;
-   			 flex-direction: column;
-   			 float: none;
-		}
-		.grid{
-			margin : 0 !important;
-			margin-left: -15px;
-		}
-		.grid-item-2{
-			margin: 20px 0 !important;
-			right: 15px;
-			width: auto;
-		}
-	}
-	.our-clients{
-		height: auto;
-		#owl-demo-3{
-			position: static;
-		}
-	}
-}
 
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
@@ -595,89 +123,7 @@ body{
 	.col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
 		text-align: center ;
 	}
-	.wellcome{
-		height: 550px;
-		.header-content{
-			    margin-top: 200px;
-   			    margin-bottom: 150px;
-		}
-	}
-	.about-us{
-		height: auto;
-		ul{
-			li{
-				text-align: left;
-			}
-		}
-		.about-us-left{
-			text-align: center;
-			img{
-				position: static;
-				width: 100%;
-			}
-		}
-		.about-us-right{
-			position: static;
-			text-align: center;
-		}
-	}
-	.contact{
-		height: auto;
-		.input{
-			flex-direction: column;
-		}
-		input{width: 100% !important;}
-	}
-	.services{
-		height: auto;
-		.services-content{
-			position: static;
-		}
-	}
-	#owl-demo{
-		position: static; 
-	}
-	.clients{
-		#owl-demo-2{
-			position: static;
-		}
-	}
-	.our-work{
-		height: auto;
-		.portfolio-list ul{
-			display: flex;
-   			 flex-direction: row;
-   			 float: right;
-		}
-		.grid{
-			margin : 0 !important;
-			margin-left: -30px;
-		}
-		.grid-item-2{
-			// margin: 20px 0 !important;
-			// right: 15px;
-			margin-left: 30px !important;
-			width: 200px;
-			.inner-2{
-					
-				top:0;left: 0;right: 0;opacity: 0;
-				transform: translateX(100px);
-				transition: all 0.5s;
-			}
-			&:hover{
-				.inner-2{
-					top:0;
-					transform: translateX(0);
-				}
-			}
-		}
-	}
-	.our-clients{
-		height: auto;
-		#owl-demo-3{
-			position: static;
-		}
-	}
+		
 
 	
 }
