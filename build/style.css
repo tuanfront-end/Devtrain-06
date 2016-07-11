@@ -7042,12 +7042,7 @@ body a:hover {
   margin-left: -15px;
 }
 .latest-content #owl-demo .item img {
-  width: 75px;
-  height: 75px;
-  margin: 0 0 15px 15px;
-}
-.latest-content .owl-controls {
-  display: none;
+  width: 100%;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .row {
@@ -7096,4 +7091,30 @@ body a:hover {
   color: #7657a5;
   text-transform: uppercase;
   font-weight: bold;
+}
+.hover-search {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  margin: 0 0 15px 15px;
+  float: left;
+}
+.inner-far {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+.inner-far:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+.inner-far .inner {
+  vertical-align: middle;
+  display: inline-block;
+  color: #000;
 }

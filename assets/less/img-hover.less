@@ -1,0 +1,25 @@
+.hover-search{
+	// overflow: hidden;
+	position: relative;
+	width: 75px;height: 75px;margin: 0 0 15px 15px; 
+	float: left;
+
+	// text-align: center;
+
+}
+.inner-far{
+	position: absolute;
+	top:0;left: 0;right: 0;bottom: 0;
+	text-align: center;
+	&:before{
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		height: 100%;
+		}
+	.inner{
+		vertical-align: middle;
+		display: inline-block;
+		color: #000;
+	}
+}
