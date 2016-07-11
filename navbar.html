@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+.mySlides {display:none;}
+.w3-display-topleft{position: absolute !important;z-index : 100}
+.trong{
+  position: absolute;
+  top :70px;left:65px; right: 100px;bottom:300px;
+  background: red;
+}
+
+.process{
+ width:0%;height:10px;background:#000;margin-left:65px;
+}
+</style>
+<body>
+
+<h2 class="w3-center">Automatic Slideshow</h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  
+<div class="w3-display-container mySlides ">
+  <img  class= "w3-animate-top" src="http://www.w3schools.com/w3css/img_la.jpg" style="width:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-yellow w3-animate-opacity">
+    The Rain Forest
+  </div>
+</div>
+
+  
+<div class="w3-display-container mySlides ">
+  <img  class= "w3-animate-bottom" src="http://www.w3schools.com/w3css/img_ny.jpg" style="width:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-yellow w3-animate-opacity">
+    The Rain Forest
+  </div>
+</div>
+
+  
+<div class="w3-display-container mySlides ">
+  <img  class= "w3-animate-left" src="http://www.w3schools.com/w3css/img_chicago.jpg" style="width:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-yellow w3-animate-opacity">
+    The Rain Forest
+  </div>
+</div>
+
+</div>
+<button onclick = "prev()"> Prev   </button> &nbsp; &nbsp; &nbsp; &nbsp;
+<button onclick = "next()"> Next > </button>
+
+<div class="trong">
+</div>
+<div class= "process">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+process();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    if (myIndex < 1) {myIndex = x.length}
+    x[myIndex-1].style.display = "block";
+    time = setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+
+function next(){
+   clearTimeout(time);
+   $('.process').animate({width: '0%'}, 3500);
+   myIndex = $('.mySlides:visible').index() +1 ;
+  
+   carousel() ;
+ }
+function prev(){
+  
+   clearTimeout(time);
+   myIndex = $('.mySlides:visible').index() - 1 ;
+  
+   carousel() ;
+ }
+function process(){
+  $('.process').animate({width: '80%'}, 3500);
+  $('.process').animate({width: '0%'}, 500);
+  process();
+}
+</script>
+
+</body>
+</html>

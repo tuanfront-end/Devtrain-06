@@ -1,0 +1,92 @@
+.top-slideshow {
+  background: #eeeeee;
+  font-family: "PT Sans";
+  font-weight: bold;
+}
+.top-slider {
+  position: relative;
+}
+.top-slider .mySlides {
+  overflow: hidden;
+  display: none;
+}
+.top-slider .mySlides img {
+  width: 100%;
+  max-height: 530px;
+}
+.top-slider .slide-control {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+}
+.top-slider .slide-control button {
+  background: #b3b3b3;
+  color: #fff;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+.top-slider .sub-slide {
+  height: auto;
+  font-family: "League";
+  position: absolute;
+  bottom: 25%;
+  width: 32%;
+  left: 0;
+  font-size: 60px;
+  color: #333333;
+}
+.top-slider .sub-slide img {
+  width: inherit;
+}
+.top-slider .sub-slide .sub-slide-content {
+  position: relative;
+}
+.top-slider .sub-slide .sub-slide-content .line-top {
+  position: absolute;
+  top: 0;
+}
+.top-slider .sub-slide .sub-slide-content .line-bottom {
+  position: absolute;
+  bottom: 0;
+}
+.top-slider .sub-slide .sub-slide-content h1 {
+  margin: 5px;
+  font-size: 80px;
+}
+.top-slider .opentime {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: right;
+  font-size: 36px;
+}
+.top-slider .opentime i {
+  color: #000;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+}
+.top-slider .opentime i:hover {
+  color: #00bff3;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.top-slider .opentime img {
+  float: right;
+}
+.top-slider .time-set {
+  position: absolute;
+  bottom: 11%;
+  right: 15px;
+  color: #f0f0f0;
+}
+.top-slider .time-set td {
+  padding-left: 40px;
+  padding: 7px;
+}
+.top-slider .time-set td.time2 {
+  color: #505050;
+}
