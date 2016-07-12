@@ -62,11 +62,15 @@ $(document).ready(function(){
            clearTimeout(time);
            $('.process').animate({width: '0%'}, 3500);
            myIndex = $('.mySlides:visible').index() - 1 ;
+           $('.mySlides img').removeClass('fadeInLeft');
+           $('.mySlides img').addClass('fadeInRight');
            carousel() ;
        });
        $('.next-slideshow').click(function(event) {
            clearTimeout(time);
            myIndex = $('.mySlides:visible').index() + 1 ;
+           $('.mySlides img').removeClass('fadeInRight');
+           $('.mySlides img').addClass('fadeInLeft');
            carousel() ;
        });
       // function prev(){
@@ -75,6 +79,15 @@ $(document).ready(function(){
      
     // End slideShow-js------------------------------------
 
-
+     // Hover-img-js------------------------------------
+        // $('.hover-search ').hover(function() {
+        //     // $(this).children('.inner-far').children('.inner').removeClass('animated wobble');
+        //     // $(this).children('.inner-far').children('.inner').addClass('animated flip');
+        // });
+        // $('.hover-search').mouseout(function() {
+        //     // $(this).children('.inner-far').children('.inner').removeClass('animated flip');
+        //     // $(this).children('.inner-far').children('.inner').addClass('animated wobble');
+        // });
+     // End Hover-img-js------------------------------------
 
 });
