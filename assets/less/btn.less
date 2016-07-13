@@ -28,3 +28,34 @@
 	background: #694d94;
 	border: none;
 }
+
+.btn-n(@width,@bg,@left-hv ){
+	position: relative;
+	overflow: hidden;
+	&:before{
+		content: '';
+		top: 0;bottom: 0;width: @width;
+		left: 100%;
+		position: absolute;
+		background-color: @bg;
+		transform : rotate(-45deg);
+		transition: all 1.5s;
+		opacity: 0;
+		z-index: 1000;
+	}
+	&:hover{
+		&:before
+		{
+			opacity: 0.6;
+			left: @left-hv;
+			transition: all 1.5s;
+		}
+	}
+}
+.my-btn{
+	padding: 10px;
+	text-transform: uppercase;
+	color: #fff;
+	background: #694d94;
+	border: none;
+}

@@ -11,6 +11,7 @@
 .top-slide .mySlides {
   overflow: hidden;
   display: none;
+  position: relative;
 }
 .top-slide .mySlides img {
   width: 100%;

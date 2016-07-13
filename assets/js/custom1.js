@@ -8,6 +8,7 @@ $(document).ready(function(){
   //owlCarousel Js ---------------------------------------------
      var owl = $("#owl-demo");
       var owl_2 = $(" #owl-demo-2");
+      var owl_3 = $(" #owl-demo-3");
    
       owl.owlCarousel({
           items : 1, //10 items above 1000px browser width
@@ -18,6 +19,14 @@ $(document).ready(function(){
       });
       owl_2.owlCarousel({
           items : 1, //10 items above 1000px browser width
+          itemsDesktop : [1000,1], //5 items between 1000px and 901px
+          itemsDesktopSmall : [900,1], // betweem 900px and 601px
+          itemsTablet: [600,1], //2 items between 600 and 0
+          itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+      });
+
+      owl_3.owlCarousel({
+          items : 7, //10 items above 1000px browser width
           itemsDesktop : [1000,1], //5 items between 1000px and 901px
           itemsDesktopSmall : [900,1], // betweem 900px and 601px
           itemsTablet: [600,1], //2 items between 600 and 0

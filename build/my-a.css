@@ -6766,6 +6766,10 @@ button.close {
   font-family: "PT Sans";
   src: url("fonts/ptSans/PTS55F.ttf") format("truetype");
 }
+@font-face {
+  font-family: "helvetica_lt_std_roman";
+  src: url("fonts/helvetica_lt_std_roman/HelveticaLTStd-Roman.otf") format("truetype");
+}
 .f20 {
   font-size: 20px;
 }
@@ -6817,8 +6821,28 @@ button.close {
 .img-fullwidth img {
   width: 100%;
 }
+.flex-center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
 body a:hover {
   text-decoration: none;
+}
+body span {
+  line-height: 20pt;
 }
 .top-nav {
   position: absolute;
@@ -6994,31 +7018,8 @@ body a:hover {
   color: #000;
   font-size: 16px;
 }
-.img-hover {
-  position: relative;
-}
-.img-hover:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #000;
-  opacity: 0;
-  z-index: 1;
-  -webkit-transition: all 0.6s;
-  -moz-transition: all 0.6s;
-  transition: all 0.6s;
-}
-.img-hover:hover:before {
-  opacity: 0.6;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-}
 .title h2 {
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   margin: 0;
 }
@@ -7026,11 +7027,14 @@ body a:hover {
   font-size: 13px;
   color: #999999;
 }
+#latest {
+  padding-bottom: 40px;
+}
 .latest-news {
   font-family: "PT Sans";
 }
 .latest-content {
-  font-family: "PT Sans";
+  font-family: "helvetica_lt_std_roman";
 }
 .latest-content strong {
   font-size: 16px;
@@ -7045,18 +7049,89 @@ body a:hover {
   width: 100%;
 }
 .latest-content .client-say {
+  position: relative;
   text-align: center;
 }
 .latest-content .client-say span {
-  font-family: "Helvetica";
   font-size: 13px;
   color: #727272;
 }
 .latest-content .client-say span.client-name {
-  font-family: "PT Sans";
   text-transform: uppercase;
   color: #7657a5;
   font-weight: bold;
+}
+.latest-content .client-say .item {
+  padding: 20px;
+}
+.latest-content .client-say .bg-testimonials {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 15px;
+  right: 15px;
+}
+.latest-content .client-say .bg-testimonials img {
+  width: 100%;
+}
+.meet-team {
+  padding: 40px 0;
+  background: #252525;
+  text-align: center;
+  color: #fff;
+}
+.meet-team button {
+  color: #000;
+  height: 14px;
+  width: 14px;
+  padding: 0;
+  font-size: 10px;
+}
+.meet-team #owl-demo-3 {
+  width: 103%;
+  margin-left: -20px;
+}
+.meet-team #owl-demo-3 .item {
+  margin-left: 5px;
+}
+.meet-team #owl-demo-3 .item img {
+  padding-bottom: 10px;
+}
+.meet-team #owl-demo-3 .item img .btn-n {
+  position: relative;
+  overflow: hidden;
+}
+.meet-team #owl-demo-3 .item img .btn-n:before {
+  content: '';
+  top: 0;
+  bottom: 0;
+  width: 300%;
+  left: 100%;
+  position: absolute;
+  background-color: #fff;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  transition: all 1.5s;
+  opacity: 0;
+  z-index: 1000;
+}
+.meet-team #owl-demo-3 .item img .btn-n:hover:before {
+  opacity: 0.6;
+  left: 0;
+  -webkit-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  transition: all 1.5s;
+}
+.meet-team #owl-demo-3 .item img:hover {
+  -webkit-filter: grayscale(0);
+}
+.meet-team #owl-demo-3 .item span {
+  text-transform: uppercase;
+  color: #7657a5;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .row {
@@ -7129,6 +7204,13 @@ body a:hover {
   -webkit-transition: all 1.5s;
   -moz-transition: all 1.5s;
   transition: all 1.5s;
+}
+.my-btn {
+  padding: 10px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #694d94;
+  border: none;
 }
 .my-btn {
   padding: 10px;
