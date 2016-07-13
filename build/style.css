@@ -6744,6 +6744,9 @@ button.close {
 .bgr2 {
   background-color: #000;
 }
+.bgr4 {
+  background-color: #7657a5;
+}
 .absolute {
   position: absolute !important;
 }
@@ -6837,6 +6840,9 @@ button.close {
   -moz-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+.text-right {
+  text-align: right;
 }
 body a:hover {
   text-decoration: none;
@@ -7019,6 +7025,7 @@ body span {
   font-size: 16px;
 }
 .title h2 {
+  font-family: "PT Sans";
   font-size: 18px;
   text-transform: uppercase;
   margin: 0;
@@ -7099,6 +7106,9 @@ body span {
   -webkit-filter: grayscale(100%);
   width: 100%;
   height: 185px;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
 }
 .meet-team #owl-demo-3 .item .btn-n:before {
   z-index: 100;
@@ -7127,10 +7137,40 @@ body span {
 }
 .meet-team #owl-demo-3 .item .btn-n:hover img {
   -webkit-filter: grayscale(0);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
 }
 .meet-team #owl-demo-3 .item span {
   text-transform: uppercase;
   color: #7657a5;
+  font-weight: bold;
+}
+.about {
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+.about img {
+  padding: 15px 0;
+}
+.about button {
+  padding: 10px;
+}
+.about button:hover {
+  color: #fff;
+}
+.about .about-content {
+  padding-bottom: 40px;
+  font-family: "helvetica_lt_std_roman";
+}
+.about .about-content span {
+  color: #727272;
+}
+.logotipi {
+  padding-bottom: 30px;
+}
+.footer {
+  background: #303030;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .row {
@@ -7183,6 +7223,7 @@ body span {
 .btn-1 {
   position: relative;
   overflow: hidden;
+  text-transform: uppercase;
 }
 .btn-1:before {
   content: '';

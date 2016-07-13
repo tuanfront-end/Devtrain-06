@@ -9,6 +9,7 @@ $(document).ready(function(){
      var owl = $("#owl-demo");
       var owl_2 = $(" #owl-demo-2");
       var owl_3 = $(" #owl-demo-3");
+      var owl_4 = $(" #owl-demo-4");
    
       owl.owlCarousel({
           items : 1, //10 items above 1000px browser width
@@ -30,6 +31,13 @@ $(document).ready(function(){
           itemsDesktop : [1000,5], //5 items between 1000px and 901px
           itemsDesktopSmall : [900,3], // betweem 900px and 601px
           itemsTablet: [600,2], //2 items between 600 and 0
+          itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+      });
+      owl_4.owlCarousel({
+          items : 5, //10 items above 1000px browser width
+          itemsDesktop : [1000,3], //5 items between 1000px and 901px
+          itemsDesktopSmall : [900,2], // betweem 900px and 601px
+          itemsTablet: [600,1], //2 items between 600 and 0
           itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
       });
      
@@ -55,12 +63,13 @@ $(document).ready(function(){
         owl_3.trigger('owl.prev');
       })
 
-      // $(".play").click(function(){
-      //   owl.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
-      // })
-      // $(".stop").click(function(){
-      //   owl.trigger('owl.stop');
-      // })
+
+      $(".play").click(function(){
+        owl_4.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
+      })
+      $(".stop").click(function(){
+        owl_4.trigger('owl.stop');
+      })
    
   
    //owlCarousel Js ---------------------------------------------
