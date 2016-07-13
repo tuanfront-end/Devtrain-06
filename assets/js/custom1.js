@@ -27,9 +27,9 @@ $(document).ready(function(){
 
       owl_3.owlCarousel({
           items : 7, //10 items above 1000px browser width
-          itemsDesktop : [1000,1], //5 items between 1000px and 901px
-          itemsDesktopSmall : [900,1], // betweem 900px and 601px
-          itemsTablet: [600,1], //2 items between 600 and 0
+          itemsDesktop : [1000,5], //5 items between 1000px and 901px
+          itemsDesktopSmall : [900,3], // betweem 900px and 601px
+          itemsTablet: [600,2], //2 items between 600 and 0
           itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
       });
      
@@ -40,6 +40,9 @@ $(document).ready(function(){
       $(".next_2").click(function(){
         owl_2.trigger('owl.next');
       })
+      $(".next_3").click(function(){
+        owl_3.trigger('owl.next');
+      })
 
 
       $(".prev").click(function(){ 
@@ -48,7 +51,9 @@ $(document).ready(function(){
        $(".prev_2").click(function(){ 
         owl_2.trigger('owl.prev');
       })
-      
+      $(".prev_3").click(function(){ 
+        owl_3.trigger('owl.prev');
+      })
 
       // $(".play").click(function(){
       //   owl.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter

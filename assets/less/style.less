@@ -352,18 +352,39 @@ body{
 		font-size: 10px;
 	}
 	#owl-demo-3{
-		 width: 103%;
-		 margin-left: -20px;
 		.item{
-			margin-left: 5px;
-			img{
-				padding-bottom: 10px;
-				.btn-n{
-					.btn-n(300%, #fff, 0);
+			.btn-n{
+				width: 135px;
+				height: 185px;
+				margin: 0 auto;
+				margin-bottom: 10px;
+				position: relative;
+				overflow: hidden;
+				img{
+					-webkit-filter: grayscale(100%);
+					width: 100%;
+					height: 185px;
 				}
-				// -webkit-filter: grayscale(100%);
+				&:before{
+					z-index: 100;
+					content: "";
+					position: absolute;
+					left: 200%;top: 10%;bottom: 10%;
+					width: 300%;
+				    opacity: 0;
+				    background: #fff;
+				    transform : rotate(-65deg);
+				    transition: all 1s;
+				}
 				&:hover{
-					-webkit-filter: grayscale(0);
+					&:before{
+						left: -170%;
+						opacity:0.3;
+					    transition: all 1s;
+					}
+					img{
+						-webkit-filter: grayscale(0);
+					}
 				}
 			}
 			span{
