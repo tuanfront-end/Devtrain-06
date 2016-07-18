@@ -7002,13 +7002,6 @@ body span {
 }
 .top-nav .top-nav-content .my-nav ul li:hover ul {
   display: block;
-  -webkit-transform: translateX(-100px);
-  -moz-transform: translateX(-100px);
-  -ms-transform: translateX(-100px);
-  transform: translateX(-100px);
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
 }
 .top-nav .top-nav-content .my-nav ul li:hover ul a {
   color: #fff;
@@ -7026,6 +7019,7 @@ body span {
   color: #fff;
 }
 .our-services {
+  overflow: hidden;
   padding: 40px 0;
   font-family: "PT Sans";
   background: url('../assets/images/bg-1.png');
@@ -7102,6 +7096,7 @@ body span {
   width: 100%;
 }
 .meet-team {
+  overflow: hidden;
   padding: 40px 0;
   background: #252525;
   text-align: center;
@@ -7167,6 +7162,7 @@ body span {
   font-weight: bold;
 }
 .about {
+  overflow: hidden;
   padding-top: 40px;
   padding-bottom: 10px;
 }
@@ -7196,6 +7192,9 @@ body span {
   padding-top: 50px;
   background: #303030;
   margin-left: 40px;
+}
+.footer .footer-content {
+  overflow: hidden;
 }
 .footer .footer-content a {
   font-size: 14px;
