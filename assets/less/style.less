@@ -34,6 +34,7 @@
 .c7{
 	color: @color7;
 }
+
 .bgr2{
 	background-color: @color2;
 }
@@ -125,8 +126,16 @@
 	align-items: center;
 	justify-content: center;
 }
+.flex-center-space{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
 .text-right{
 	text-align: right;
+}
+.bold{
+	font-weight: bold;
 }
 
 body{
@@ -170,7 +179,7 @@ body{
 	font-weight: bold;
 	padding-top: 15px;
 	background: @color3;
-	opacity: 0.8;
+	opacity: 0.9;
 	.top-nav-content{
 		display: flex;
 		align-items: baseline;
@@ -218,7 +227,7 @@ body{
 						padding: 30px;
 						position: absolute;
 						display: none;
-						background-color: #937eb3;
+						background-color: @color3;
 						z-index: 100;
 						width: 150px ;
 						height: auto;
@@ -430,7 +439,84 @@ body{
 }
 
 .footer{
+	padding-bottom: 70px;
+	position: relative;
+	font-family: "PT Sans" ;
+	padding-top: 50px;
 	background: @color3;
+	margin-left: 40px;
+	
+	.footer-content{
+		a{
+			font-size: 14px;
+		}
+		span{
+			font-size: 13px;
+		}
+		.foot-navigation-content{
+			ul{
+				margin: 0;padding: 0;
+				li{
+					list-style-type: none;
+					border-bottom: 1px solid @color7;
+					width: 100%;
+					text-transform: capitalize;
+					font-weight: bold;
+					padding: 10px 0;
+					a{
+						color: #fff;
+					}
+					&:hover{
+						a{
+							color: @color4;
+						}
+					} 
+				}
+			}
+		}
+		.foot-twitter{
+			font-family: "helvetica_lt_std_roman" ;
+			button{
+				width: 14px;height: 14px;font-size: 10px;padding: 0;
+			}
+			span{
+				font-weight: bold;
+			}
+		}
+		.foot-contact-content{
+			color: #fff;
+			width: 70%;
+		}
+	}
+	
+	.bott-foot{
+		font-family: "helvetica_lt_std_roman" ;
+		font-size: 12px;
+		position: absolute;
+		top: 98%;
+		left: 13px;
+		right: 0;
+		color: @color5;
+		background-color: #191919;
+		padding-bottom: 20px;
+		padding-top: 20px;
+		strong{
+			color: #fff;
+		}
+		.absolute{
+			top: 0;left: 0;right: 0;bottom: 0;
+			button{
+				padding: 8px 25px;
+				background-color: #191919;
+				position: absolute;
+				bottom: 98%;
+			}
+		}
+		.bott-foot-sub{
+			margin-left: -28px;
+			font-weight: bold;
+		}
+	}
 }
 
 

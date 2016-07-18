@@ -10,6 +10,7 @@ $(document).ready(function(){
       var owl_2 = $(" #owl-demo-2");
       var owl_3 = $(" #owl-demo-3");
       var owl_4 = $(" #owl-demo-4");
+      var owl_5 = $(" #owl-demo-5");
    
       owl.owlCarousel({
           items : 1, //10 items above 1000px browser width
@@ -40,7 +41,13 @@ $(document).ready(function(){
           itemsTablet: [600,1], //2 items between 600 and 0
           itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
       });
-     
+     owl_5.owlCarousel({
+          items : 1, //10 items above 1000px browser width
+          itemsDesktop : [1000,1], //5 items between 1000px and 901px
+          itemsDesktopSmall : [900,1], // betweem 900px and 601px
+          itemsTablet: [600,1], //2 items between 600 and 0
+          itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+      });
       // Custom Navigation Events
       $(".next").click(function(){
         owl.trigger('owl.next');
@@ -51,9 +58,12 @@ $(document).ready(function(){
       $(".next_3").click(function(){
         owl_3.trigger('owl.next');
       })
+      $(".next_5").click(function(){
+        owl_5.trigger('owl.next');
+      })
 
 
-      $(".prev").click(function(){ 
+      $(".prev, .prev_2, .prev_3").click(function(){ 
         owl.trigger('owl.prev');
       })
        $(".prev_2").click(function(){ 
@@ -62,6 +72,10 @@ $(document).ready(function(){
       $(".prev_3").click(function(){ 
         owl_3.trigger('owl.prev');
       })
+      $(".prev_5").click(function(){ 
+        owl_5.trigger('owl.prev');
+      })
+
 
 
       $(".play").click(function(){
@@ -130,5 +144,13 @@ $(document).ready(function(){
         //     // $(this).children('.inner-far').children('.inner').addClass('animated wobble');
         // });
      // End Hover-img-js------------------------------------
+
+     // Js-Go to top Button here
+      $('.up-top').click(function(event) {
+        $('html, body').animate({
+                    scrollTop: 0
+                }, 2000);
+      });
+     // Js-Go to top Button here
 
 });
