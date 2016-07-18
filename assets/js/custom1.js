@@ -107,7 +107,7 @@ $(document).ready(function(){
           if (myIndex > x.length) {myIndex = 1;}
           if (myIndex < 1) {myIndex = x.length;}
           x[myIndex-1].style.display = "block";
-          time = setTimeout(carousel, 4000); // Change image every 2 seconds
+          time = setTimeout(carousel, 6000); // Change image every 2 seconds
       }
 
       // function next(){
@@ -117,15 +117,15 @@ $(document).ready(function(){
            clearTimeout(time);
            $('.process').animate({width: '0%'}, 3500);
            myIndex = $('.mySlides:visible').index() - 1 ;
-           $('.mySlides img').removeClass('fadeInLeft');
-           $('.mySlides img').addClass('fadeInRight');
+           $('.mySlides img').removeClass('slideInLeft');
+           $('.mySlides img').addClass('slideInRight');
            carousel() ;
        });
        $('.next-slideshow').click(function(event) {
            clearTimeout(time);
            myIndex = $('.mySlides:visible').index() + 1 ;
-           $('.mySlides img').removeClass('fadeInRight');
-           $('.mySlides img').addClass('fadeInLeft');
+           $('.mySlides img').removeClass('slideInRight');
+           $('.mySlides img').addClass('slideInLeft');
            carousel() ;
        });
       // function prev(){
@@ -154,6 +154,6 @@ $(document).ready(function(){
      // Js-Go to top Button here
 
     // .Ul Li navbar Hover here Js
- 
+
     //End  .Ul Li navbar Hover here Js
 });
