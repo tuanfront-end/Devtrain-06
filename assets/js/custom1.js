@@ -158,15 +158,9 @@ $(document).ready(function(){
      // Js-Go to top Button here
 
     // .Ul Li navbar Hover here Js
-      // $('.my-nav ul li').hover(function(){
-      //   $(this).children('ul').css({
-      //     background: 'red',
-      //     color: 'green',
-      //     opacity: '1',
-
-      //   });
+      // $('.my-nav ul li:after').has('ul').hover(function(){
+      //   $(this).after('border-bottom','5px solid #fff');
       // });
-
     //End  .Ul Li navbar Hover here Js
 
 
