@@ -1257,17 +1257,17 @@ body img {
   border-top: 20px solid transparent;
   opacity: 0;
 }
-.sidebar-content .list-sidebar-box ul li:hover {
+.sidebar-content .list-sidebar-box ul li:hover,
+.sidebar-content .list-sidebar-box ul li.active {
   background: #7657a5;
 }
-.sidebar-content .list-sidebar-box ul li:hover a {
+.sidebar-content .list-sidebar-box ul li:hover a,
+.sidebar-content .list-sidebar-box ul li.active a {
   color: #fff;
 }
-.sidebar-content .list-sidebar-box ul li:hover:after {
+.sidebar-content .list-sidebar-box ul li:hover:after,
+.sidebar-content .list-sidebar-box ul li.active:after {
   opacity: 1 ;
-}
-.sidebar-content .list-sidebar-box ul li.active a {
-  color: #7657a5;
 }
 .sidebar-content .img-sidebar-content {
   margin-left: -30px;
