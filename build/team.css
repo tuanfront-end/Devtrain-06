@@ -1,0 +1,8 @@
+.breadcrumb {
+  font-family: "Helvetica";
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid gray;
+  font-size: 12px;
+  background: #fafafa;
+}

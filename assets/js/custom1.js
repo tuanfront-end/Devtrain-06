@@ -117,14 +117,14 @@ $(document).ready(function(){
            clearTimeout(time);
            $('.process').animate({width: '0%'}, 3500);
            myIndex = $('.mySlides:visible').index() - 1 ;
-           $('.mySlides img').removeClass('slideInLeft');
-           $('.mySlides img').addClass('slideInRight');
+           $('.mySlides img').removeClass('slideInUp');
+           $('.mySlides img').addClass('slideInLeft');
            carousel() ;
        });
        $('.next-slideshow').click(function(event) {
            clearTimeout(time);
            myIndex = $('.mySlides:visible').index() + 1 ;
-           $('.mySlides img').removeClass('slideInRight');
+           $('.mySlides img').removeClass('slideInUp');
            $('.mySlides img').addClass('slideInLeft');
            carousel() ;
        });
@@ -154,6 +154,20 @@ $(document).ready(function(){
      // Js-Go to top Button here
 
     // .Ul Li navbar Hover here Js
+      // $('.my-nav ul li').hover(function(){
+      //   $(this).children('ul').css({
+      //     background: 'red',
+      //     color: 'green',
+      //     opacity: '1',
+
+      //   });
+      // });
 
     //End  .Ul Li navbar Hover here Js
+
+
+    // $fn.scrollSpeed(step, speed, easing);
+     jQuery.scrollSpeed(100, 800);
+    // End $fn.scrollSpeed(step, speed, easing);
+
 });

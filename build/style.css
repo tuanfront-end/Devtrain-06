@@ -1591,6 +1591,13 @@ pre code {
     width: 1170px;
   }
 }
+.container-960 {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 960px;
+}
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
@@ -6426,6 +6433,8 @@ button.close {
 .dl-horizontal dd:after,
 .container:before,
 .container:after,
+.container-960:before,
+.container-960:after,
 .container-fluid:before,
 .container-fluid:after,
 .row:before,
@@ -6458,6 +6467,7 @@ button.close {
 .clearfix:after,
 .dl-horizontal dd:after,
 .container:after,
+.container-960:after,
 .container-fluid:after,
 .row:after,
 .form-horizontal .form-group:after,
@@ -6751,7 +6761,10 @@ button.close {
   position: absolute !important;
 }
 .relative {
-  position: relative;
+  position: relative !important;
+}
+.static {
+  position: static !important;
 }
 .none {
   display: none;
@@ -6858,6 +6871,37 @@ button.close {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
+.flex-end-just {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -moz-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.flex-column {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
 .text-right {
   text-align: right;
 }
@@ -6870,9 +6914,13 @@ body a:hover {
 body span {
   line-height: 20pt;
 }
+.img-full-width img {
+  width: 100%;
+}
 .top-nav {
   position: absolute;
-  width: 100%;
+  left: 0;
+  right: 0;
   top: 0;
   z-index: 2;
   font-family: "PT Sans";
@@ -6920,6 +6968,7 @@ body span {
   margin-left: 30px;
   text-align: center;
   padding-bottom: 10px;
+  font-size: 12px;
 }
 .top-nav .top-nav-content .my-nav ul li:before {
   content: '';
@@ -6965,20 +7014,34 @@ body span {
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
+  display: inherit;
   margin: 0 auto;
   text-align: left;
   overflow: hidden;
   padding: 30px;
   position: absolute;
-  display: none;
+  opacity: 0;
   background-color: #303030;
   z-index: 100;
   width: 150px ;
   height: auto;
   color: #fff;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: translateY(-100px);
+  -moz-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  transform: translateY(-100px);
 }
 .top-nav .top-nav-content .my-nav ul li ul li {
   margin: 0 auto;
+  float: none;
+  font-size: 12px;
+}
+.top-nav .top-nav-content .my-nav ul li ul li a {
+  color: #fff;
+  text-transform: capitalize;
 }
 .top-nav .top-nav-content .my-nav ul li:hover:before {
   opacity: 1;
@@ -7001,11 +7064,14 @@ body span {
   transition: all 0.5s;
 }
 .top-nav .top-nav-content .my-nav ul li:hover ul {
-  display: block;
-}
-.top-nav .top-nav-content .my-nav ul li:hover ul a {
-  color: #fff;
-  text-transform: capitalize;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .top-nav .top-nav-content .makean {
   background: #7657a5;
@@ -7464,4 +7530,26 @@ body span {
 .flip {
   -webkit-animation-duration: 3s;
   -webkit-animation-iteration-count: 3;
+}
+.breadcrumb {
+  font-family: "helvetica_lt_std_roman";
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 12px;
+  background: #fafafa;
+}
+.breadcrumb a {
+  color: #7657a5;
+}
+.breadcrumb i {
+  font-size: 10px;
+}
+.team-content {
+  font-family: "helvetica_lt_std_roman";
+  background-image: url('../assets/images/bg-1.png');
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 12px;
+  color: #727272;
 }

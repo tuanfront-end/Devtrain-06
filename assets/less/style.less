@@ -45,7 +45,10 @@
 	position: absolute !important;
 }
 .relative{
-	position: relative;
+	position: relative !important; 
+}
+.static{
+	position: static !important;
 }
 .none{
 	display: none;
@@ -131,6 +134,15 @@
 	align-items: center;
 	justify-content: space-between;
 }
+.flex-end-just{
+	display: flex;
+	align-items : flex-end;
+	justify-content: space-between;
+}
+.flex-column{
+	display: flex;
+	flex-direction: column;
+}
 .text-right{
 	text-align: right;
 }
@@ -149,7 +161,10 @@ body{
 		line-height: 20pt;
 	}
 }
-
+.padding(@pdtop, @pdbottom){
+	padding-top: @pdtop;
+	padding-bottom: @pdbottom;
+}
 .my-caret-down(@size-border,@color-border){
 	width: 0;
 	height: 0;
@@ -169,10 +184,14 @@ body{
 	-webkit-border-radius:@radius;
 	-moz-border-radius: @radius; 
 }
-
+.img-full-width{
+	img{
+		width: 100%;
+	}
+}
 .top-nav{
 	position: absolute;
-	width: 100%;
+	left: 0;right: 0;
 	top: 0;
 	z-index: 2;
 	font-family: "PT Sans" ;
@@ -199,6 +218,7 @@ body{
 					margin-left: 30px;
 					text-align: center;
 					padding-bottom: 10px;
+					font-size: 12px;
 					&:before{
 						content: '';
 						opacity: 0;
@@ -220,20 +240,30 @@ body{
 					}
 					ul{
 						.border-radius(4px);
-
+						display: inherit;
 						margin: 0 auto;
 						text-align: left;
 						overflow: hidden;
 						padding: 30px;
 						position: absolute;
-						display: none;
+						opacity: 0;
 						background-color: @color3;
 						z-index: 100;
 						width: 150px ;
 						height: auto;
 						color: #fff;
+						// animation-name: my_nav_ul_out ;
+						// animation-duration: 4s;
+						transition: all 1s;
+						transform : translateY(-100px);
 						li{
 							margin: 0 auto;
+							float: none;
+							font-size: 12px;
+							a{
+								color: #fff;
+								text-transform: capitalize;
+							}
 						}
 					}
 					&:hover{
@@ -246,13 +276,11 @@ body{
 							transform: translateX(-50%);transition: all 0.5s;
 						}
 						ul{
-							display: block;
-							// transform : translateX(-100px);
-							// transition: all 0.5s;
-							a{
-								color: #fff;
-								text-transform: capitalize;
-							}
+							 // animation-name: my_nav_ul ;
+   					// 		 animation-duration: 4s;
+							 opacity: 1;
+							 transform : translateY(0);
+							 transition: all 0.5s;	
 						}
 					}
 				}
@@ -553,3 +581,6 @@ body{
 @import 'btn';
 @import 'img-hover';
 @import 'my-animate';
+@import 'keyframes';
+
+@import 'team';
