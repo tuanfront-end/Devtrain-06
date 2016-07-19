@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
 }
+.clear {
+  clear: both;
+}
 .c1 {
   color: #fff;
 }
@@ -950,6 +953,79 @@ body img {
   -moz-transition: all 1s;
   transition: all 1s;
 }
+.hover-search-2 {
+  position: relative;
+  margin: 0 0px 30px 30px;
+  float: left;
+  z-index: 1;
+}
+.hover-search-2:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0;
+}
+.hover-search-2 .inner-far {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  font-size: 20px;
+  opacity: 0;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+  z-index: 0;
+}
+.hover-search-2 .inner-far:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.hover-search-2 .inner-far .inner {
+  vertical-align: middle;
+  display: inline-block;
+  color: #fff;
+  z-index: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+}
+.hover-search-2 .inner-far .inner i {
+  color: #fff;
+}
+.hover-search-2:hover:before {
+  opacity: 0.5;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.hover-search-2:hover .inner-far {
+  opacity: 1;
+}
+.hover-search-2:hover .inner-far .inner {
+  -webkit-transform: rotate(720deg);
+  -moz-transform: rotate(720deg);
+  -ms-transform: rotate(720deg);
+  transform: rotate(720deg);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+}
 .hover-bg {
   position: relative;
   z-index: 1;
@@ -1146,6 +1222,7 @@ body img {
   border: 1px solid #ececec;
   padding-bottom: 20px;
   padding-top: 20px;
+  background: #f9f8f8;
 }
 .sidebar-content .list-sidebar-box .title-box {
   padding-top: 20px;
@@ -1194,9 +1271,8 @@ body img {
 }
 .sidebar-content .img-sidebar-content {
   margin-left: -30px;
+  padding-bottom: 30px;
 }
 .sidebar-content .img-sidebar-content img {
-  margin-left: 30px;
-  width: 86px;
-  margin-top: 30px;
+  width: 90px;
 }
