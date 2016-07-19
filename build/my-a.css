@@ -6807,6 +6807,9 @@ button.close {
 .mt90 {
   margin-top: 90px;
 }
+.mt100 {
+  margin-top: 100px;
+}
 .mb15 {
   margin-bottom: 15px;
 }
@@ -6913,6 +6916,9 @@ body a:hover {
 }
 body span {
   line-height: 20pt;
+}
+body img {
+  max-width: 100%;
 }
 .img-full-width img {
   width: 100%;
@@ -7302,6 +7308,10 @@ body span {
   color: #fff;
   width: 70%;
 }
+.footer .footer-content .foot-facebook-content iframe {
+  width: 100%;
+  overflow: scroll;
+}
 .footer .bott-foot {
   font-family: "helvetica_lt_std_roman";
   font-size: 12px;
@@ -7543,10 +7553,21 @@ body span {
 .team-content {
   font-family: "helvetica_lt_std_roman";
   background-image: url('../assets/images/bg-1.png');
+  background-repeat: no-repeat;
   padding-top: 50px;
   padding-bottom: 50px;
   font-size: 12px;
   color: #727272;
+}
+.team-content .team-profile img {
+  max-width: 100%;
+}
+.team-content span {
+  line-height: 10pt;
+}
+.team-content .avatar-team img {
+  position: absolute;
+  z-index: 1;
 }
 .my-a-1 {
   color: #7657a5;
