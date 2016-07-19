@@ -100,3 +100,42 @@
   transition: all 0.5s;
   opacity: 0.3;
 }
+.img-client {
+  position: relative;
+  overflow: hidden;
+}
+.img-client img {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+}
+.img-client:before {
+  z-index: 100;
+  content: "";
+  position: absolute;
+  left: 200%;
+  top: 10%;
+  bottom: 10%;
+  width: 300%;
+  opacity: 0;
+  background: #fff;
+  -webkit-transform: rotate(-65deg);
+  -moz-transform: rotate(-65deg);
+  -ms-transform: rotate(-65deg);
+  transform: rotate(-65deg);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+}
+.img-client:hover:before {
+  left: -150%;
+  opacity: 0.3;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+}
+.img-client:hover img {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+}

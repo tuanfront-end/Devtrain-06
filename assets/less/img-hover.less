@@ -74,6 +74,35 @@
 	}
 }
 
+
+.img-client{
+	position: relative;
+	overflow: hidden;
+	img{
+		transition: all 1s;
+	}
+	&:before{
+		z-index: 100;
+		content: "";
+		position: absolute;
+		left: 200%;top: 10%;bottom: 10%;
+		width: 300%;
+	    opacity: 0;
+	    background: #fff;
+	    transform : rotate(-65deg);
+	    transition: all 1s;
+	}
+	&:hover{
+		&:before{
+			left: -150%;
+			opacity:0.3;
+		    transition: all 1s;
+		}
+		img{
+			transition: all 1s;
+		}
+	}
+}
 // .img-hover{
 // 	position: relative;
 // 	&:before{
