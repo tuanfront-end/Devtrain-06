@@ -197,8 +197,115 @@ body{
 }
 .top-nav{
 	position: absolute;
-	left: 0;right: 0;
+	left: 0; right: 0;
+	margin: 0 auto;
 	top: 0;
+	z-index: 2;
+	font-family: "PT Sans" ;
+	font-weight: bold;
+	padding-top: 15px;
+	background: @color3;
+	opacity: 0.9;
+	.top-nav-content{
+		display: flex;
+		align-items: baseline;
+		.my-nav{
+			display: flex;
+		    align-items: baseline;
+			ul{	
+				margin: 0 auto;
+				display: flex;
+				color: #fff;
+				// padding-top: 25px;
+
+				li{
+					// overflow: hidden;
+					position: relative;
+					list-style-type: none;
+					margin-left: 30px;
+					text-align: center;
+					padding-bottom: 10px;
+					font-size: 12px;
+					&:before{
+						content: '';
+						opacity: 0;
+						position: absolute;
+						bottom: 0;left: 0;right: 0;height: 5px;background: @color4;
+						transform : translateX(-100px);
+						transition: all 0.5s;
+
+					}
+					&:after{
+						opacity: 0;
+						content: '';position: absolute;width: 0;height: 0;
+						border-bottom: 5px solid @color4;
+						border-right: 5px solid transparent;
+						border-left: 5px solid transparent;
+						bottom: 5px;left: 50%;
+						transform: translateX(-50%);
+						transform : translateX(-100px);transition: all 0.5s;
+					}
+					ul{
+						.border-radius(4px);
+						display: inherit;
+						margin: 0 auto;
+						text-align: left;
+						overflow: hidden;
+						padding: 30px;
+						position: absolute;
+						opacity: 0;
+						background-color: @color3;
+						z-index: 100;
+						width: 150px ;
+						height: auto;
+						color: #fff;
+						// animation-name: my_nav_ul_out ;
+						// animation-duration: 4s;
+						transition: all 1s;
+						transform : translateY(-100px);
+						li{
+							margin: 0 auto;
+							float: none;
+							font-size: 12px;
+							a{
+								color: #fff;
+								text-transform: capitalize;
+							}
+						}
+					}
+					&:hover{
+						&:before{
+							opacity: 1;
+							transform : translateX(0px);transition: all 0.5s;
+						}
+						&:after{
+							opacity: 1;
+							transform: translateX(-50%);transition: all 0.5s;
+						}
+						ul{
+							 // animation-name: my_nav_ul ;
+   					// 		 animation-duration: 4s;
+							 opacity: 1;
+							 transform : translateY(0);
+							 transition: all 0.5s;	
+						}
+					}
+				}
+			}
+		}
+		.makean{
+			background: @color4;
+			.border-radius(4px);
+			padding: 15px;
+		}
+	}
+	a{
+		text-transform: uppercase;
+		color: #fff;
+	}
+}
+.top-nav-subpage{
+	position: relative;
 	z-index: 2;
 	font-family: "PT Sans" ;
 	font-weight: bold;
@@ -596,3 +703,4 @@ body{
 @import 'keyframes';
 
 @import 'team';
+@import 'single-post';

@@ -4,6 +4,10 @@ console.log('script from cutsom11111111');
 
 $(document).ready(function(){
 
+  // $fn.scrollSpeed(step, speed, easing);
+     jQuery.scrollSpeed(100, 800);
+  // End $fn.scrollSpeed(step, speed, easing);
+
 
   //owlCarousel Js ---------------------------------------------
      var owl = $("#owl-demo");
@@ -166,8 +170,6 @@ $(document).ready(function(){
     //End  .Ul Li navbar Hover here Js
 
 
-    // $fn.scrollSpeed(step, speed, easing);
-     jQuery.scrollSpeed(100, 800);
-    // End $fn.scrollSpeed(step, speed, easing);
+    
 
 });
