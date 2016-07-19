@@ -7750,7 +7750,7 @@ body img {
 }
 .blog-content {
   padding-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
   background-image: url('../assets/images/bg-1.png');
   background-repeat: no-repeat;
   font-family: "helvetica_lt_std_roman";
@@ -7822,6 +7822,12 @@ body img {
   top: 3px;
   background: #7657a5;
   color: #fff;
+}
+.blog-content .last-comment {
+  font-family: "PT Sans";
+}
+.blog-content .post-archive strong {
+  line-height: 20pt;
 }
 .breadcrumb {
   font-family: "helvetica_lt_std_roman";
