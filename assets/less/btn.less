@@ -1,3 +1,4 @@
+@import 'var';
 .btn-1{
 	position: relative;
 	overflow: hidden;
@@ -54,10 +55,40 @@
 		}
 	}
 }
-.my-btn{
-	padding: 10px;
+.my-btn-4{
+	font-size: 12px;
+	padding: 15px;
 	text-transform: uppercase;
 	color: #fff;
-	background: #694d94;
+	background: @color4;
 	border: none;
+	&:hover{
+		color: #fff;
+	}
+}
+.my-btn-4-2{
+	font-size: 12px;
+	padding: 10px 15px;
+	text-transform: uppercase;
+	color: #fff;
+	background: @color4;
+	border: none;
+	&:hover{
+		color: #fff;
+	}
+}
+.btn-rd2{
+	.border-radius(2px);
+}
+.btn-rd4{
+	.border-radius(4px);
+}
+.btn-rd8{
+	.border-radius(8px);
+}
+.btn-rd16{
+	.border-radius(16px);
+}
+.btn-rd32{
+	.border-radius(32px);
 }
