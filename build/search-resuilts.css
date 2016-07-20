@@ -1,0 +1,31 @@
+.search-rs-content {
+  padding-top: 50px;
+  padding-bottom: 200px;
+  background-image: url('../assets/images/bg-1.png');
+  background-repeat: no-repeat;
+  font-size: 12px;
+  color: #727272;
+}
+.page-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.page-list button {
+  background: #7657a5;
+  color: #fff;
+  text-transform: uppercase;
+}
+.page-list button:hover {
+  color: #fff;
+}
+.page-list button i {
+  font-size: 12px;
+}

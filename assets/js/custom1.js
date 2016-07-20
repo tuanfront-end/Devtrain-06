@@ -8,6 +8,7 @@ $(document).ready(function(){
      // jQuery.scrollSpeed(100, 800);
   // End $fn.scrollSpeed(step, speed, easing);
 
+  
 
   //owlCarousel Js ---------------------------------------------
      var owl = $("#owl-demo");
@@ -89,7 +90,6 @@ $(document).ready(function(){
         owl_4.trigger('owl.stop');
       })
    
-  
    //owlCarousel Js ---------------------------------------------
 
 
@@ -104,19 +104,19 @@ $(document).ready(function(){
       function carousel() {
           var i;
           var x = document.getElementsByClassName("mySlides");
-          for (i = 0; i < x.length; i++) {
+          if (x.length>0) {
+            for (i = 0; i < x.length; i++) {
              x[i].style.display = "none";
+            }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1;}
+              if (myIndex < 1) {myIndex = x.length;}
+              x[myIndex-1].style.display = "block";
+              time = setTimeout(carousel, 6000); // Change image every 2 seconds
           }
-          myIndex++;
-          if (myIndex > x.length) {myIndex = 1;}
-          if (myIndex < 1) {myIndex = x.length;}
-          x[myIndex-1].style.display = "block";
-          time = setTimeout(carousel, 6000); // Change image every 2 seconds
+          
       }
 
-      // function next(){
-         
-      //  }
       $('.prev-slideshow').click(function(event) {
            clearTimeout(time);
            $('.process').animate({width: '0%'}, 3500);
@@ -132,21 +132,11 @@ $(document).ready(function(){
            $('.mySlides img').addClass('slideInLeft');
            carousel() ;
        });
-      // function prev(){
-         
-      //  }
-     
+
     // End slideShow-js------------------------------------
 
      // Hover-img-js------------------------------------
-        // $('.hover-search ').hover(function() {
-        //     // $(this).children('.inner-far').children('.inner').removeClass('animated wobble');
-        //     // $(this).children('.inner-far').children('.inner').addClass('animated flip');
-        // });
-        // $('.hover-search').mouseout(function() {
-        //     // $(this).children('.inner-far').children('.inner').removeClass('animated flip');
-        //     // $(this).children('.inner-far').children('.inner').addClass('animated wobble');
-        // });
+     
      // End Hover-img-js------------------------------------
 
      // Js-Go to top Button here
@@ -157,10 +147,9 @@ $(document).ready(function(){
       });
      // Js-Go to top Button here
 
+
     // .Ul Li navbar Hover here Js
-      // $('.my-nav ul li:after').has('ul').hover(function(){
-      //   $(this).after('border-bottom','5px solid #fff');
-      // });
+    
     //End  .Ul Li navbar Hover here Js
 
 

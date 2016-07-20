@@ -1,6 +1,6 @@
-
+@import 'bootstrap/bootstrap';
 // Bootstrap
-
+@import 'var';
 *{
 	padding: 0;
 	margin: 0;
@@ -8,13 +8,9 @@
 .clear{
 	clear: both;
 }
-@color1: #fff;
-@color2: #000;
-@color3 : #303030;
-@color4: #7657a5;
-@color5 :#727272;
-@color6 : #999999;
-@color7 : #727272;
+.success-2{
+	background: #f5f5f5;
+}
 .c1{
 	color: @color1;
 }
@@ -83,6 +79,10 @@
 .f16{
 	font-size: 16px;
 }
+.mt50{
+	margin-top: 50px;
+}
+
 .mt60{
 	margin-top: 60px;
 }
@@ -172,29 +172,7 @@ body{
 		max-width: 100%;
 	}
 }
-.padding(@pdtop, @pdbottom){
-	padding-top: @pdtop;
-	padding-bottom: @pdbottom;
-}
-.my-caret-down(@size-border,@color-border){
-	width: 0;
-	height: 0;
-	border-top: @size-border solid @color-border;
-	border-left:  @size-border solid transparent;
-	border-right:  @size-border solid transparent;
-}
-.my-caret-up(@size-border,@color-border){
-	width: 0;
-	height: 0;
-	border-bottom: @size-border solid @color-border;
-	border-left:  @size-border solid transparent;
-	border-right:  @size-border solid transparent;
-}
-.border-radius(@radius){
-	border-radius: @radius;
-	-webkit-border-radius:@radius;
-	-moz-border-radius: @radius; 
-}
+
 .img-full-width{
 	img{
 		width: 100%;
@@ -289,6 +267,17 @@ body{
 								display: none;
 							}
 						}
+
+						
+						i{
+							position: relative;
+							&:after{
+								content: '';
+								position: absolute;z-index: 100;
+								top: 0;width: 20px;height: 20px;background: red;
+							}
+						}
+
 					}
 				}
 				&:hover{
@@ -314,10 +303,15 @@ body{
 			}
 		}
 	}
-	.makean{
-		background: @color4;
-		.border-radius(4px);
-		padding: 15px;
+	
+}
+.makean{
+	background: @color4;
+	.border-radius(4px);
+	padding: 15px;
+	color: #fff;
+	&:hover{
+		color: #fff;
 	}
 }
 .top-nav-subpage{
@@ -366,10 +360,16 @@ body{
 		text-transform: uppercase;
 		margin: 0;
 	}
+	strong{color: #000}
 	span{
+		font-family: "PT Sans" ;
 		font-size: 13px;
 		color: @color6;
+		strong{
+			color: @color4;
+		}
 	}
+
 }
 
 #latest{
@@ -628,3 +628,7 @@ body{
 @import 'team';
 @import 'single-post';
 @import 'sidebar';
+@import 'search-resuilts';
+@import 'pricing';
+@import 'services';
+@import 'appointment';

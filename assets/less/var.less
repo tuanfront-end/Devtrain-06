@@ -1,0 +1,30 @@
+@color1: #fff;
+@color2: #000;
+@color3 : #303030;
+@color4: #7657a5;
+@color5 :#727272;
+@color6 : #999999;
+@color7 : #727272;
+.padding(@pdtop, @pdbottom){
+	padding-top: @pdtop;
+	padding-bottom: @pdbottom;
+}
+.my-caret-down(@size-border,@color-border){
+	width: 0;
+	height: 0;
+	border-top: @size-border solid @color-border;
+	border-left:  @size-border solid transparent;
+	border-right:  @size-border solid transparent;
+}
+.my-caret-up(@size-border,@color-border){
+	width: 0;
+	height: 0;
+	border-bottom: @size-border solid @color-border;
+	border-left:  @size-border solid transparent;
+	border-right:  @size-border solid transparent;
+}
+.border-radius(@radius){
+	border-radius: @radius;
+	-webkit-border-radius:@radius;
+	-moz-border-radius: @radius; 
+}

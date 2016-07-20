@@ -1,0 +1,20 @@
+.pricing-content {
+  font-size: 12px;
+  font-family: "helvetica_lt_std_roman";
+  color: #727272;
+}
+.pricing-content table tr th {
+  background: #fcfbfb;
+  border: none !important;
+  font-family: "PT Sans";
+  color: #000;
+  font-size: 14px;
+  padding: 15px !important;
+}
+.pricing-content table tr td {
+  padding: 15px !important;
+}
+.pricing-content table tr:hover {
+  border: 2px solid #7657a5 !important;
+  color: #7657a5;
+}
