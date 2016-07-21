@@ -6,3 +6,8 @@
 .services-content span {
   line-height: 15pt;
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .list-sidebar-box {
+    margin-bottom: 40px;
+  }
+}
