@@ -8186,6 +8186,7 @@ body img {
 }
 .apponitment-content {
   font-family: "helvetica_lt_std_roman";
+  padding-top: 50px;
   padding-bottom: 200px;
   background-image: url('../assets/images/bg-1.png');
   background-repeat: no-repeat;
@@ -8269,6 +8270,24 @@ body img {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border: 1px solid #d2d2d2;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .opentime-2 .time-set {
+    bottom: 0;
+  }
+  .opentime-2 .time-set table tr td {
+    padding-left: 30px;
+    padding-top: 0px;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .opentime-2 .time-set {
+    bottom: 0;
+  }
+  .opentime-2 .time-set table tr td {
+    padding-left: 30px;
+    padding-top: 0px;
+  }
 }
 .heading-one {
   background-image: url('../assets/images/bg-1.png');
