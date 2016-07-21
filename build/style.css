@@ -8522,6 +8522,20 @@ div.panel.show {
   padding-top: 20px;
   min-height: 800px;
 }
+.content-404 .search-box {
+  width: 300px;
+}
+.content-404 .search-box input {
+  width: 100%;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .header-404 {
+    background: none;
+  }
+  .content-404 {
+    min-height: 400px;
+  }
+}
 img.line-logo,
 .my-respon-img {
   display: none;
