@@ -157,3 +157,28 @@ div.panel.show {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .heading-one {
+    background: none;
+    padding-bottom: 0;
+  }
+  .heading-one .part-5 {
+    display: block;
+  }
+  .sidebar-content {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .feautures-menu-2 ul li {
+    margin: 0;
+  }
+  .features-btn {
+    display: block;
+  }
+  .features-btn button {
+    margin: 4px;
+  }
+  .pb200 {
+    padding-bottom: 50px;
+  }
+}
