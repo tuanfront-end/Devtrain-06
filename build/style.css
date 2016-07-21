@@ -7986,7 +7986,7 @@ body img {
 }
 .search-box {
   margin: 0 auto;
-  max-width: 210px;
+  max-width: 100%;
   position: relative;
 }
 .search-box input {
@@ -8010,6 +8010,28 @@ body img {
 }
 .post-archive strong {
   line-height: 20pt;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .blog-content {
+    padding-bottom: 50px;
+  }
+  .blog-content .infor-client-comment {
+    margin-bottom: 40px;
+  }
+  .search-box {
+    width: 100%;
+  }
+  .search-box input {
+    width: 100%;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .search-box {
+    width: 100%;
+  }
+  .search-box input {
+    width: 100%;
+  }
 }
 .sidebar-content {
   font-family: "helvetica_lt_std_roman";
@@ -8836,6 +8858,26 @@ img.line-logo,
   img.line-logo,
   .my-respon-img {
     display: block;
+  }
+  .logo {
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .top-nav {
     position: static;
