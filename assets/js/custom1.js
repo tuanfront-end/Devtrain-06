@@ -35,14 +35,14 @@ $(document).ready(function(){
       owl_3.owlCarousel({
           items : 7, //10 items above 1000px browser width
           itemsDesktop : [1000,5], //5 items between 1000px and 901px
-          itemsDesktopSmall : [900,3], // betweem 900px and 601px
+          itemsDesktopSmall : [900,5], // betweem 900px and 601px
           itemsTablet: [600,2], //2 items between 600 and 0
           itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
       });
       owl_4.owlCarousel({
           items : 5, //10 items above 1000px browser width
-          itemsDesktop : [1000,3], //5 items between 1000px and 901px
-          itemsDesktopSmall : [900,2], // betweem 900px and 601px
+          itemsDesktop : [1000,5], //5 items between 1000px and 901px
+          itemsDesktopSmall : [900,5], // betweem 900px and 601px
           itemsTablet: [600,1], //2 items between 600 and 0
           itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
       });
@@ -152,7 +152,11 @@ $(document).ready(function(){
     
     //End  .Ul Li navbar Hover here Js
 
-
-    
+    $('.btn-nav-respon').click(function(){
+      $('.my-nav-respon').slideToggle("slow");
+    });
+     $('.my-nav-respon ul li').click(function(){
+      $(this).children('ul').slideToggle();
+     });
 
 });

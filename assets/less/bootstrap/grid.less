@@ -23,7 +23,15 @@
 
 .container-960{
   .container-fixed();
-  width: 960px;
+  @media (min-width: @screen-sm-min) {
+    width: @container-sm;
+  }
+  @media (min-width: @screen-md-min) {
+    width: @container-md;
+  }
+  @media (min-width: @screen-lg-min) {
+    width: @container-md;
+  }
 }
 // Fluid container
 //
