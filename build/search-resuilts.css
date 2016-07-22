@@ -18,17 +18,6 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-.page-list button {
-  background: #7657a5;
-  color: #fff;
-  text-transform: uppercase;
-}
-.page-list button:hover {
-  color: #fff;
-}
-.page-list button i {
-  font-size: 12px;
-}
 @media (min-width: 320px) and (max-width: 768px) {
   .search-rs-content {
     background: none;

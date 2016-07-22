@@ -32,7 +32,9 @@
   padding: 10px;
   text-transform: uppercase;
   color: #fff;
-  background: #694d94;
+  background: -webkit-linear-gradient(#8c6eb9, #614789, #382654);
+  background: -moz-linear-gradient(#8c6eb9, #614789, #382654);
+  background: linear-gradient(#8c6eb9, #614789, #382654);
   border: none;
 }
 .my-btn-4 {
@@ -40,7 +42,9 @@
   padding: 15px;
   text-transform: uppercase;
   color: #fff;
-  background: #7657a5;
+  background: -webkit-linear-gradient(#8c6eb9, #614789, #382654);
+  background: -moz-linear-gradient(#8c6eb9, #614789, #382654);
+  background: linear-gradient(#8c6eb9, #614789, #382654);
   border: none;
 }
 .my-btn-4:hover {
@@ -51,7 +55,9 @@
   padding: 10px 15px;
   text-transform: uppercase;
   color: #fff;
-  background: #7657a5;
+  background: -webkit-linear-gradient(#8c6eb9, #614789, #382654);
+  background: -moz-linear-gradient(#8c6eb9, #614789, #382654);
+  background: linear-gradient(#8c6eb9, #614789, #382654);
   border: none;
 }
 .my-btn-4-2:hover {

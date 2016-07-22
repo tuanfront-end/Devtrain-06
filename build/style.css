@@ -7166,7 +7166,9 @@ body img {
   color: #fff;
 }
 .makean {
-  background: #7657a5;
+  background: -webkit-linear-gradient(#8c6eb9, #614789, #382654);
+  background: -moz-linear-gradient(#8c6eb9, #614789, #382654);
+  background: linear-gradient(#8c6eb9, #614789, #382654);
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -7570,7 +7572,9 @@ body img {
   padding: 10px;
   text-transform: uppercase;
   color: #fff;
-  background: #694d94;
+  background: -webkit-linear-gradient(#8c6eb9, #614789, #382654);
+  background: -moz-linear-gradient(#8c6eb9, #614789, #382654);
+  background: linear-gradient(#8c6eb9, #614789, #382654);
   border: none;
 }
 .my-btn-4 {
@@ -7578,7 +7582,9 @@ body img {
   padding: 15px;
   text-transform: uppercase;
   color: #fff;
-  background: #7657a5;
+  background: -webkit-linear-gradient(#8c6eb9, #614789, #382654);
+  background: -moz-linear-gradient(#8c6eb9, #614789, #382654);
+  background: linear-gradient(#8c6eb9, #614789, #382654);
   border: none;
 }
 .my-btn-4:hover {
@@ -7589,7 +7595,9 @@ body img {
   padding: 10px 15px;
   text-transform: uppercase;
   color: #fff;
-  background: #7657a5;
+  background: -webkit-linear-gradient(#8c6eb9, #614789, #382654);
+  background: -moz-linear-gradient(#8c6eb9, #614789, #382654);
+  background: linear-gradient(#8c6eb9, #614789, #382654);
   border: none;
 }
 .my-btn-4-2:hover {
@@ -7990,12 +7998,6 @@ body img {
   -moz-border-radius: 4px;
   border: 1px solid #d2d2d2;
 }
-.blog-content .infor-client-comment button {
-  text-transform: uppercase;
-  background: #7657a5;
-  color: #fff;
-  padding: 10px;
-}
 .search-box {
   margin: 0 auto;
   max-width: 100%;
@@ -8003,7 +8005,7 @@ body img {
 }
 .search-box input {
   height: 40px;
-  width: 210px;
+  width: 100%;
   background: none;
   border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -8012,9 +8014,11 @@ body img {
 }
 .search-box button {
   position: absolute;
-  right: 3px;
+  right: 5px;
   top: 3px;
-  background: #7657a5;
+  background: -webkit-linear-gradient(#8c6eb9, #614789, #382654);
+  background: -moz-linear-gradient(#8c6eb9, #614789, #382654);
+  background: linear-gradient(#8c6eb9, #614789, #382654);
   color: #fff;
 }
 .last-comment {
@@ -8139,17 +8143,6 @@ body img {
   -moz-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-.page-list button {
-  background: #7657a5;
-  color: #fff;
-  text-transform: uppercase;
-}
-.page-list button:hover {
-  color: #fff;
-}
-.page-list button i {
-  font-size: 12px;
 }
 @media (min-width: 320px) and (max-width: 768px) {
   .search-rs-content {

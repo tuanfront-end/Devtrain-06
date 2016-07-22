@@ -48,12 +48,6 @@
   -moz-border-radius: 4px;
   border: 1px solid #d2d2d2;
 }
-.blog-content .infor-client-comment button {
-  text-transform: uppercase;
-  background: #7657a5;
-  color: #fff;
-  padding: 10px;
-}
 .search-box {
   margin: 0 auto;
   max-width: 100%;
@@ -61,7 +55,7 @@
 }
 .search-box input {
   height: 40px;
-  width: 210px;
+  width: 100%;
   background: none;
   border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -70,9 +64,11 @@
 }
 .search-box button {
   position: absolute;
-  right: 3px;
+  right: 5px;
   top: 3px;
-  background: #7657a5;
+  background: -webkit-linear-gradient(#8c6eb9, #614789, #382654);
+  background: -moz-linear-gradient(#8c6eb9, #614789, #382654);
+  background: linear-gradient(#8c6eb9, #614789, #382654);
   color: #fff;
 }
 .last-comment {
