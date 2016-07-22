@@ -3,6 +3,7 @@
   padding-top: 40px;
   padding-bottom: 60px;
   background-image: url('../assets/images/bg-1.png');
+  background-size: 800px;
   background-repeat: no-repeat;
   color: #727272;
 }
@@ -63,4 +64,9 @@
 .list-sidebar-box ul li:hover:after,
 .list-sidebar-box ul li.active:after {
   opacity: 1 ;
+}
+@media (max-width: 1200px) {
+  .sidebar-content {
+    background: none;
+  }
 }

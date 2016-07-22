@@ -6,6 +6,9 @@
   width: 100%;
   min-height: 360px;
 }
+.gm-style {
+  display: none !important;
+}
 @media (min-width: 320px) and (max-width: 768px) {
   .apponitment-content {
     background: none;

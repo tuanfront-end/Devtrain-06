@@ -16,6 +16,7 @@
 .team-content {
   font-family: "helvetica_lt_std_roman";
   background-image: url('../assets/images/bg-1.png');
+  background-size: 800px;
   background-repeat: no-repeat;
   padding-top: 50px;
   padding-bottom: 100px;
@@ -75,5 +76,10 @@
   }
   .team-content .mt100 {
     margin-top: 30px;
+  }
+}
+@media (max-width: 1200px) {
+  .team-content {
+    background: none;
   }
 }

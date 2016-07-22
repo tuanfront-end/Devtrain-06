@@ -2,6 +2,33 @@
 img.line-logo, .my-respon-img{
 	display: none;
 }
+.our-services{
+	overflow: hidden;
+	padding: 40px 0;
+	font-family: "PT Sans" ;
+	background: url('../assets/images/bg-1.png');
+	background-position:top 0px left -55px;
+	background-size: 800px;
+	background-repeat: no-repeat;
+	text-align: left;
+	.our-services-part{
+		span{
+			color: @color7;
+		}
+		a{
+			color: @color4;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+		strong{
+			color: #000;
+			font-size: 16px;
+		}
+		
+		
+	}
+
+}
 .btn-nav-respon{
 	display: none;
 }
@@ -488,7 +515,6 @@ img.line-logo, .my-respon-img{
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
 @media (min-width: 992px) and (max-width: 1200px)  {
-
 	.top-nav{
 		.top-nav-content{
 			align-items: stretch;
@@ -578,5 +604,11 @@ img.line-logo, .my-respon-img{
 @media (min-width: 1200px) {
 	.logo{
 		display: flex;
+	}
+}
+
+@media (max-width: 1200px) {
+	.our-services{
+		background: none;
 	}
 }

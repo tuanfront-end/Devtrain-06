@@ -1,6 +1,7 @@
 @import 'var';
 .heading-one{
 	background-image: url('../assets/images/bg-1.png');
+	background-size: 800px;
 	background-repeat: no-repeat;
 	font-family: "helvetica_lt_std_roman" ;
 	font-size: 12px;
@@ -184,4 +185,8 @@ div.panel.show {
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
-@media (min-width: 992px) {}
+@media (min-width: 1200px) {
+	.heading-one{
+		background: none;
+	}
+}
