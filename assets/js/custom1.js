@@ -152,11 +152,26 @@ $(document).ready(function(){
     
     //End  .Ul Li navbar Hover here Js
 
-    $('.btn-nav-respon').click(function(){
-      $('.my-nav-respon').slideToggle("slow");
-    });
+    // $('.btn-nav-respon').click(function(){
+    //   $('.my-nav-respon').slideToggle("slow");
+    // });
      $('.my-nav-respon ul li').click(function(){
-      $(this).children('ul').slideToggle();
+       $(this).children('ul').slideToggle();
+     });
+      // $hamburger-padding-x                       : 15px !default;
+      // $hamburger-padding-y                       : 15px !default;
+      // $hamburger-layer-width                     : 40px !default;
+      // $hamburger-layer-height                    : 4px !default;
+      // $hamburger-layer-spacing                   : 6px !default;
+      // $hamburger-layer-color                     : #fff !default;
+      // $hamburger-layer-border-radius             : 4px !default;
+      // $hamburger-hover-opacity                   : 0.7 !default;
+      // $hamburger-hover-transition-duration       : 0.15s !default;
+      // $hamburger-hover-transition-timing-function: linear !default;
+   
+     $('.hamburger').click(function(event) {
+       $(this).toggleClass('is-active');
+       $('.my-nav-respon').slideToggle("slow");
      });
 
-});
+}); 
