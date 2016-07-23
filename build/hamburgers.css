@@ -9,7 +9,7 @@
   background-color: #fff !important;
  }
 .hamburger {
-  padding: 15px 15px;
+  padding: 10px 10px;
   display: inline-block;
   cursor: pointer;
   transition-property: opacity, -webkit-filter;
@@ -28,7 +28,7 @@
     opacity: 0.7; }
 
 .hamburger-box {
-  width: 40px;
+  width: 25px;
   height: 24px;
   display: inline-block;
   position: relative; }
@@ -38,7 +38,7 @@
   top: 50%;
   margin-top: -2px; }
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    width: 40px;
+    width: 25px;
     height: 4px;
     background-color: #000;
     border-radius: 4px;

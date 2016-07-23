@@ -111,7 +111,7 @@ img.line-logo,
 .twiter-respon {
   display: none;
 }
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 319px) and (max-width: 768px) {
   .keo1 {
     display: none;
   }
@@ -148,6 +148,15 @@ img.line-logo,
     justify-content: space-between;
   }
   .top-nav .top-nav-content .my-nav {
+    display: none;
+    padding-bottom: 10px;
+  }
+  .top-nav .top-nav-content .my-nav .makean {
+    width: 100%;
+    text-align: center;
+  }
+  .top-nav .top-nav-content .my-nav .my-nav-respon {
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -165,15 +174,6 @@ img.line-logo,
     -moz-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding-bottom: 10px;
-  }
-  .top-nav .top-nav-content .my-nav .my-nav-respon {
-    display: none;
-    width: 100%;
-  }
-  .top-nav .top-nav-content .my-nav .makean {
-    width: 100%;
-    text-align: center;
   }
   .top-nav .top-nav-content .my-nav ul {
     -webkit-box-orient: vertical;
@@ -268,6 +268,15 @@ img.line-logo,
     justify-content: space-between;
   }
   .top-nav-subpage .top-nav-content .my-nav {
+    display: none;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+  .top-nav-subpage .top-nav-content .my-nav .my-nav-respon {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -280,15 +289,6 @@ img.line-logo,
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -moz-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding-bottom: 10px;
-  }
-  .top-nav-subpage .top-nav-content .my-nav .my-nav-respon {
-    display: none;
     width: 100%;
   }
   .top-nav-subpage .top-nav-content .my-nav .makean {
@@ -408,6 +408,7 @@ img.line-logo,
   .our-services {
     background: none;
     padding: 20px 0;
+    font-size: 12px;
   }
   .our-services .features-accordion {
     display: block;
@@ -546,7 +547,7 @@ img.line-logo,
     margin: 0;
   }
   .top-nav .top-nav-content .my-nav ul li {
-    margin-right: 23px;
+    margin-right: 30px;
     margin-left: 0;
   }
   .top-nav .top-nav-content .my-nav ul li a {
@@ -597,7 +598,7 @@ img.line-logo,
     margin: 0;
   }
   .top-nav-subpage .top-nav-content .my-nav ul li {
-    margin-right: 19px;
+    margin-right: 30px;
     margin-left: 0;
   }
   .top-nav-subpage .top-nav-content .my-nav ul li a {
@@ -826,5 +827,12 @@ img.line-logo,
 @media (max-width: 1200px) {
   .our-services {
     background: none;
+    font-size: 12px;
+  }
+  .latest-news span {
+    font-size: 12px;
+  }
+  .about .about-content {
+    font-size: 12px;
   }
 }

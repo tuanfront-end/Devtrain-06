@@ -6,7 +6,9 @@
 	padding: 0;
 	margin: 0;
 }
-
+.container-960{
+	font-size: 12px;
+}
 .clear{
 	clear: both;
 }
@@ -14,10 +16,10 @@
 	background: #f5f5f5;
 }
 .c1{
-	color: @color1;
+	color: @color1 !important;
 }
 .c2{
-	color: @color2;
+	color: @color2 !important;
 }
 .c3{
 	color: @color3;
@@ -29,7 +31,7 @@
 	color: @color5;
 }
 .c6{
-	color: @color6;
+	color: @color6 !important;
 }
 .c7{
 	color: @color7;
@@ -64,7 +66,7 @@
 }
 @font-face{
 	font-family: "PT Sans" ;
-	src:url("fonts/ptSans/PTC55F.ttf") format("truetype");
+	src:url("fonts/ptSans/PTS55F.ttf") format("truetype");
 }
 @font-face{
 	font-family: "helvetica_lt_std_roman" ;
@@ -192,7 +194,9 @@ body{
 			border: 2px solid @color4 !important;
 		}
 	}
-	
+	strong{
+		color: #333333;
+	}
 	a{
 		color: @color4;
 		text-decoration: none;
@@ -356,14 +360,17 @@ body{
 	background: @color3;
 	opacity: 0.9;
 	a{
+		font-size: 12px;
 		text-transform: uppercase;
 		color: #fff;
+		i{font-size: 9px;}
 	}
 }
 
 
 .title{
 	h2{
+		color: #333333;
 		font-family: "PT Sans" ;
 		font-size: 18px;
 		text-transform: uppercase;
@@ -475,7 +482,9 @@ body{
 	padding-top: 50px;
 	background: @color3;
 	// margin-left: 40px;
-	
+	.title{
+		h2,strong{color: #fff;}
+	}
 	.footer-content{
 		overflow: hidden;
 		a{
@@ -565,7 +574,9 @@ body{
 	padding-top: 50px;
 	background: @color3;
 	margin-left: 40px;
-	
+	.title{
+		h2,strong{color: #fff;}
+	}
 	.footer-content{
 		overflow: hidden;
 		a{
@@ -757,8 +768,10 @@ body{
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
-  @media (min-width: 1200px) {
-   
+  @media (max-width: 1200px) {
+   	span{
+   		font-size: 12px;
+   	}
   }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////

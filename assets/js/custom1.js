@@ -39,8 +39,8 @@ $(document).ready(function(){
 
       owl_3.owlCarousel({
           items : 7, //10 items above 1000px browser width
-          itemsDesktop : [1000,5], //5 items between 1000px and 901px
-          itemsDesktopSmall : [900,5], // betweem 900px and 601px
+          itemsDesktop : [1200,6], //5 items between 1000px and 901px
+          itemsDesktopSmall : [992,5], // betweem 900px and 601px
           itemsTablet: [600,2], //2 items between 600 and 0
           itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
       });
@@ -163,20 +163,12 @@ $(document).ready(function(){
      $('.my-nav-respon ul li').click(function(){
        $(this).children('ul').slideToggle();
      });
-      // $hamburger-padding-x                       : 15px !default;
-      // $hamburger-padding-y                       : 15px !default;
-      // $hamburger-layer-width                     : 40px !default;
-      // $hamburger-layer-height                    : 4px !default;
-      // $hamburger-layer-spacing                   : 6px !default;
-      // $hamburger-layer-color                     : #fff !default;
-      // $hamburger-layer-border-radius             : 4px !default;
-      // $hamburger-hover-opacity                   : 0.7 !default;
-      // $hamburger-hover-transition-duration       : 0.15s !default;
-      // $hamburger-hover-transition-timing-function: linear !default;
    
      $('.hamburger').click(function(event) {
        $(this).toggleClass('is-active');
-       $('.my-nav-respon').slideToggle("slow");
+
+       $('.my-nav').slideToggle("slow");
+       // $('.my-nav').css("display","flex");
      });
 
 }); 

@@ -121,7 +121,7 @@ img.line-logo, .my-respon-img{
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
-@media (min-width:320px) and (max-width: 768px) {
+@media (min-width:319px) and (max-width: 768px) {
 	.keo1{display: none;}
 	.keo2{display: block;}
 
@@ -141,17 +141,18 @@ img.line-logo, .my-respon-img{
 			    justify-content: space-between;
 			}
 			.my-nav{
-				.my-nav-respon{
-					display: none;
-					width: 100%;
-				}
-				flex-direction: column;
-				display: flex;
-				justify-content: space-between;
+				display: none;
 				padding-bottom: 10px;
 				.makean{
 					width: 100%;
 					text-align: center;
+				}
+				.my-nav-respon{
+					// display: none;
+					width: 100%;
+					flex-direction: column;
+					display: flex;
+					justify-content: space-between;
 				}
 				ul{
 					
@@ -223,11 +224,11 @@ img.line-logo, .my-respon-img{
 			}
 			.my-nav{
 				.my-nav-respon{
-					display: none;
+					flex-direction: column;
+					display: flex;
 					width: 100%;
 				}
-				flex-direction: column;
-				display: flex;
+				display: none;
 				justify-content: space-between;
 				padding-bottom: 10px;
 				.makean{
@@ -331,6 +332,7 @@ img.line-logo, .my-respon-img{
 	.our-services{
 		background: none;
 		padding: 20px 0;
+		font-size: 12px;
 		.features-accordion{
 			display: block;
 			padding: 0;
@@ -445,7 +447,7 @@ img.line-logo, .my-respon-img{
 				ul{
 					margin: 0;
 					li{
-						margin-right: 23px;
+						margin-right: 30px;
 						margin-left: 0;
 						a{font-size: 	12px}
 					}
@@ -475,7 +477,7 @@ img.line-logo, .my-respon-img{
 				ul{
 					margin: 0;
 					li{
-						margin-right: 19px;
+						margin-right: 30px;
 						margin-left: 0;
 						a{font-size: 12px}
 					}
@@ -676,5 +678,12 @@ img.line-logo, .my-respon-img{
 @media (max-width: 1200px) {
 	.our-services{
 		background: none;
+		font-size: 12px;
+	}
+	.latest-news span{
+		font-size: 12px;
+	}
+	.about .about-content{
+		font-size: 12px;
 	}
 }

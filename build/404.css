@@ -11,11 +11,13 @@
 }
 .content-404 {
   font-family: "PT Sans";
-  font-size: 18px;
   color: #727272;
   text-align: center;
   padding-top: 20px;
   min-height: 800px;
+}
+.content-404 span {
+  font-size: 18px;
 }
 .content-404 .search-box {
   width: 300px;

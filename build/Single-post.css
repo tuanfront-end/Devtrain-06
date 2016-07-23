@@ -11,6 +11,9 @@
 .blog-content .title span strong {
   color: #7657a5;
 }
+.blog-content ul {
+  padding-left: 20px;
+}
 .blog-content ul li {
   margin-top: 10px;
   list-style-image: url('../assets/images/list.png');

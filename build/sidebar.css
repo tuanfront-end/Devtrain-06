@@ -1,11 +1,17 @@
 .sidebar-content {
-  font-family: "helvetica_lt_std_roman";
   padding-top: 40px;
   padding-bottom: 60px;
   background-image: url('../assets/images/bg-1.png');
   background-size: 800px;
   background-repeat: no-repeat;
   color: #727272;
+}
+.sidebar-content strong {
+  font-size: 14px;
+  font-family: "helvetica_lt_std_roman";
+}
+.sidebar-content span {
+  font-family: "PT Sans";
 }
 .img-sidebar-content {
   margin-left: -30px;
