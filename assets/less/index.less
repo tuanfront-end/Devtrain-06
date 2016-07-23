@@ -72,8 +72,17 @@ img.line-logo, .my-respon-img{
 		    background-repeat: no-repeat;
 		    background-position: initial;
 		    padding: 15px 18px 30px 18px;
-		    // background-position: top 100% left;
+		    position: relative;
 		    background-size: cover;
+		    margin-bottom: 15px;
+		    &:after{
+		    	content: '';
+		    	position: absolute;
+		    	top: 100%;
+				left: 50%;
+				transform : translateX(-50%);
+		    	.my-caret-down(12px,#e5e5e5);
+		    }
 		}
 
 	}

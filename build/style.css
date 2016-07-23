@@ -6999,6 +6999,9 @@ body img {
   color: #fff;
   font-size: 12px;
 }
+.top-nav a i {
+  font-size: 9px;
+}
 .top-nav-content {
   display: -webkit-box;
   display: -webkit-flex;
@@ -8743,7 +8746,24 @@ img.line-logo,
   background-repeat: no-repeat;
   background-position: initial;
   padding: 15px 18px 30px 18px;
+  position: relative;
   background-size: cover;
+  margin-bottom: 15px;
+}
+.latest-content .client-say .bg-testimonials:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-top: 12px solid #e5e5e5;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
 }
 .btn-nav-respon {
   display: none;
