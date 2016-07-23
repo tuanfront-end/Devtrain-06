@@ -221,6 +221,9 @@
   padding-bottom: 17px;
   font-size: 12px;
 }
+.opentime .time-far .time-set td.active {
+  color: #7657a5;
+}
 .opentime .time-far .time-set td.time2 {
   color: #505050;
 }

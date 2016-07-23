@@ -6801,6 +6801,10 @@ button.close {
   src: url("fonts/ptSans/PT_Sans-Web-Regular.ttf") format("truetype");
 }
 @font-face {
+  font-family: "PT Sans-bold";
+  src: url("fonts/ptSans/PT_Sans-Web-Bold.ttf") format("truetype");
+}
+@font-face {
   font-family: "helvetica_lt_std_roman";
   src: url("fonts/helvetica_lt_std_roman/HelveticaLTStd-Roman.otf") format("truetype");
 }
@@ -7211,6 +7215,10 @@ body img {
   font-size: 18px;
   text-transform: uppercase;
   margin: 0;
+}
+.title h2 strong {
+  font-family: "PT Sans-bold";
+  font-size: 18px;
 }
 .title span {
   font-family: "PT Sans";
@@ -7696,7 +7704,7 @@ body img {
   width: 14px;
   padding: 0;
   background: #cbcbcb;
-  font-size: 10px;
+  font-size: 8px;
   position: relative;
   z-index: 1;
 }
@@ -8403,6 +8411,12 @@ body img {
 .opentime-2 .time-set table tr td {
   padding-left: 30px;
   padding-top: 16px;
+}
+.opentime-2 .time-set table tr td.active {
+  color: #7657a5;
+}
+.opentime-2 .time-set table tr td.time2 {
+  color: #505050;
 }
 .my-input strong {
   color: #000;

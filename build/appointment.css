@@ -72,6 +72,12 @@
   padding-left: 30px;
   padding-top: 16px;
 }
+.opentime-2 .time-set table tr td.active {
+  color: #7657a5;
+}
+.opentime-2 .time-set table tr td.time2 {
+  color: #505050;
+}
 .my-input strong {
   color: #000;
   text-transform: capitalize;
