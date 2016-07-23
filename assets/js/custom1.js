@@ -5,7 +5,7 @@ console.log('script from cutsom11111111');
 $(document).ready(function(){
 
   // $fn.scrollSpeed(step, speed, easing);
-     // jQuery.scrollSpeed(100, 800);
+     jQuery.scrollSpeed(100, 600);
   // End $fn.scrollSpeed(step, speed, easing);
 
   // Window load_screen //
