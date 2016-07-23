@@ -8,6 +8,11 @@ $(document).ready(function(){
      // jQuery.scrollSpeed(100, 800);
   // End $fn.scrollSpeed(step, speed, easing);
 
+  // Window load_screen //
+	$(window).load(function() {
+	   $(".page-loader").fadeOut();
+	});
+  // Window load_screen //
   
 
   //owlCarousel Js ---------------------------------------------

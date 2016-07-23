@@ -114,12 +114,15 @@
 }
 .slide-content .far-slide-content .mxh i {
   font-size: 20px;
+  padding-left: 8px;
+  padding-top: 7px;
   color: #FFF;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
-  background: #000;
-  padding: 10px;
+  background: #303030;
+  width: 32px;
+  height: 32px;
 }
 .slide-content .far-slide-content .mxh i:hover {
   color: #00bff3;
@@ -133,8 +136,11 @@
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
-  background: #000;
-  padding: 10px;
+  background: #303030;
+  width: 32px;
+  height: 32px;
+  padding-left: 8px;
+  padding-top: 7px;
 }
 .mxh i:hover {
   color: #00bff3;

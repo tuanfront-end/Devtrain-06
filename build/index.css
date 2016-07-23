@@ -5,12 +5,13 @@ img.line-logo,
 .our-services {
   overflow: hidden;
   padding: 40px 0;
-  font-family: "PT Sans";
+  font-family: "helvetica_lt_std_roman";
   background: url('../assets/images/bg-1.png');
   background-position: top 0px left -55px;
   background-size: 800px;
   background-repeat: no-repeat;
   text-align: left;
+  font-size: 13px;
 }
 .our-services .our-services-part span {
   color: #727272;
@@ -24,12 +25,56 @@ img.line-logo,
   color: #000;
   font-size: 16px;
 }
+.latest-news {
+  font-family: "helvetica_lt_std_roman";
+}
+.latest-news strong {
+  font-size: 16px;
+}
+.latest-news span {
+  font-size: 13px;
+}
+.latest-content strong {
+  font-size: 16px;
+}
+.latest-content span {
+  font-size: 13px;
+}
+.latest-content #owl-demo .item {
+  margin-left: -15px;
+}
+.latest-content #owl-demo .item img {
+  width: 100%;
+}
+.latest-content .client-say {
+  position: relative;
+  text-align: center;
+}
+.latest-content .client-say span {
+  font-size: 13px;
+  color: #727272;
+}
+.latest-content .client-say span.client-name {
+  text-transform: uppercase;
+  color: #7657a5;
+  font-weight: bold;
+}
+.latest-content .client-say .bg-testimonials {
+  background: url('../assets/images/bg-testimonials.png');
+  background-repeat: no-repeat;
+  background-position: initial;
+  padding: 15px 18px 30px 18px;
+  background-size: cover;
+}
 .btn-nav-respon {
   display: none;
 }
 .our-services,
 .lates-news {
   display: block;
+}
+#latest {
+  padding-bottom: 40px;
 }
 #latest .features-accordion {
   display: none;
@@ -337,16 +382,6 @@ img.line-logo,
   .time-far table tr td {
     padding-bottom: 15px !important;
   }
-  .latest-content .client-say .bg-testimonials {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 15px;
-    right: 15px;
-    bottom: 35%;
-    background: url('../assets/images/bg-testimonials.png') top / cover;
-    background-repeat: round;
-  }
   .slide-content {
     position: static !important;
   }
@@ -375,8 +410,8 @@ img.line-logo,
     display: block;
     padding: 0;
   }
-  #latest .features-accordion .bg-testimonials {
-    bottom: 45%;
+  .latest-content .client-say .item {
+    padding: 0;
   }
   .meet-team-content,
   .meet-team-title {
@@ -609,16 +644,6 @@ img.line-logo,
   .time-far table tr td {
     padding-bottom: 15px !important;
   }
-  .latest-content .client-say .bg-testimonials {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 15px;
-    right: 15px;
-    bottom: 35%;
-    background: url('../assets/images/bg-testimonials.png') top / cover;
-    background-repeat: round;
-  }
   .slide-content {
     position: static !important;
   }
@@ -743,9 +768,6 @@ img.line-logo,
     -moz-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-  }
-  .latest-content .client-say .bg-testimonials img {
-    min-height: 170px;
   }
   .hover-search {
     width: 60px;
