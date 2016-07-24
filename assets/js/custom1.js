@@ -73,7 +73,7 @@ $(document).ready(function(){
       })
 
 
-      $(".prev, .prev_2, .prev_3").click(function(){ 
+      $(".prev").click(function(){ 
         owl.trigger('owl.prev');
       })
        $(".prev_2").click(function(){ 
