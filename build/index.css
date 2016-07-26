@@ -112,6 +112,19 @@ img.line-logo,
   display: none;
 }
 @media (min-width: 319px) and (max-width: 768px) {
+  .none-420 {
+    display: none;
+  }
+  i.fa.fa-chevron-down {
+    margin-left: 15px;
+  }
+  .btn-responsive {
+    width: 35px!important;
+    height: 35px!important;
+    background: #cdcdcd;
+    font-size: 12px!important;
+    line-height: 35px;
+  }
   .keo1 {
     display: none;
   }
@@ -495,6 +508,13 @@ img.line-logo,
   }
 }
 @media (min-width: 769px) and (max-width: 991px) {
+  .btn-responsive {
+    width: 35px!important;
+    height: 35px!important;
+    background: #cdcdcd;
+    font-size: 12px!important;
+    line-height: 35px;
+  }
   img.line-logo,
   .my-respon-img {
     display: block;

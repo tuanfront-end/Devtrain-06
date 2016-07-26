@@ -151,21 +151,31 @@
   z-index: 1;
 }
 .hover-bg .father {
-  z-index: -1;
   opacity: 0;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
-}
-.hover-bg .father:before {
-  z-index: -1;
+  width: 100%;
+  height: 100%;
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  background: red;
+  text-align: center;
+}
+.hover-bg .father .btn-hover {
   background: #000;
+  width: 150px;
+  height: 40px;
+  margin-top: 25%;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  font-family: "PT Sans-bold";
+  color: #fff;
 }
 .hover-bg:hover .father {
   -webkit-transition: all 0.5s;
