@@ -4,8 +4,12 @@ console.log('script from cutsom11111111');
 
 $(document).ready(function(){
 
+
+  $(".hover-bg .father").append("<button>READ MORE</button>");
+  $(".hover-bg .father button").addClass("btn-hover");
+
   // $fn.scrollSpeed(step, speed, easing);
-     // jQuery.scrollSpeed(100, 500);
+     // jQuery.scrollSpeed(100, 800);
   // End $fn.scrollSpeed(step, speed, easing);
 
   // Window load_screen //
@@ -161,7 +165,7 @@ $(document).ready(function(){
     //   $('.my-nav-respon').slideToggle("slow");
     // });
      $('.my-nav-respon ul li').click(function(){
-       $(this).children('ul').slideToggle();
+       $(this).children('ul').fadeToggle();
      });
    
      $('.hamburger').click(function(event) {

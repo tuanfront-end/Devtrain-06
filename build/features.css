@@ -66,9 +66,9 @@
 .feautures-menu-2 ul li.active {
   background: #7657a5;
 }
-.feautures-menu-2 ul li:hover a,
-.feautures-menu-2 ul li.active a {
-  color: #fff;
+.feautures-menu-2 ul li:hover a.c2,
+.feautures-menu-2 ul li.active a.c2 {
+  color: #fff!important;
 }
 .feautures-menu-2 ul li:hover:after,
 .feautures-menu-2 ul li.active:after {

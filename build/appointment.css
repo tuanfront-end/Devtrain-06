@@ -123,3 +123,38 @@
     background-position: left top 30px;
   }
 }
+.table-condensed th {
+  border: 1px solid #ddd!important;
+  background: #f5f5f5;
+}
+.table-condensed td {
+  border: 1px solid #ddd!important;
+  background: #f5f5f5;
+}
+th.datepicker-switch {
+  color: #fff;
+  background: -webkit-linear-gradient(#805fb3, #6b4f96, #553e78);
+  background: -moz-linear-gradient(#805fb3, #6b4f96, #553e78);
+  background: linear-gradient(#805fb3, #6b4f96, #553e78);
+}
+th.datepicker-switch:hover {
+  background: -webkit-linear-gradient(#805fb3, #6b4f96, #553e78) !important;
+  background: -moz-linear-gradient(#805fb3, #6b4f96, #553e78) !important;
+  background: linear-gradient(#805fb3, #6b4f96, #553e78) !important;
+}
+th.next,
+th.prev {
+  color: #fff;
+  border: 1px solid #fff!important;
+  background: -webkit-linear-gradient(#805fb3, #6b4f96, #553e78);
+  background: -moz-linear-gradient(#805fb3, #6b4f96, #553e78);
+  background: linear-gradient(#805fb3, #6b4f96, #553e78);
+}
+td.day.today {
+  background: #6c5098!important;
+  color: #fff!important;
+}
+td.day.active {
+  background: #6c5098!important;
+  color: #fff!important;
+}

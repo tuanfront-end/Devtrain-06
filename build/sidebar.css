@@ -56,7 +56,7 @@
   position: absolute;
   border-left: 10px solid #7657a5;
   border-bottom: 20px solid transparent;
-  border-top: 20px solid transparent;
+  border-top: 18px solid transparent;
   opacity: 0;
 }
 .list-sidebar-box ul li:hover,
@@ -69,6 +69,57 @@
 }
 .list-sidebar-box ul li:hover:after,
 .list-sidebar-box ul li.active:after {
+  opacity: 1 ;
+}
+.list-sidebar-box2 {
+  border: 1px solid #ececec;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background: #f9f8f8;
+}
+.list-sidebar-box2 .title-box {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.list-sidebar-box2 ul li {
+  position: relative;
+  list-style: none;
+  padding-left: 25px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+.list-sidebar-box2 ul li a {
+  color: #727272;
+  text-decoration: none;
+}
+.list-sidebar-box2 ul li:focus a {
+  color: #7657a5;
+}
+.list-sidebar-box2 ul li:after {
+  content: '';
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-right: 10px solid #7657a5;
+  border-bottom: 20px solid transparent;
+  border-top: 18px solid transparent;
+  opacity: 0;
+}
+.list-sidebar-box2 ul li:hover,
+.list-sidebar-box2 ul li.active {
+  background: #7657a5;
+}
+.list-sidebar-box2 ul li:hover a,
+.list-sidebar-box2 ul li.active a {
+  color: #fff;
+}
+.list-sidebar-box2 ul li:hover:after,
+.list-sidebar-box2 ul li.active:after {
   opacity: 1 ;
 }
 @media (max-width: 1200px) {
