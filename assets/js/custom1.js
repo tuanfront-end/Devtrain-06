@@ -9,7 +9,7 @@ $(document).ready(function(){
   $(".hover-bg .father button").addClass("btn-hover");
 
   // $fn.scrollSpeed(step, speed, easing);
-     jQuery.scrollSpeed(100, 800);
+     // jQuery.scrollSpeed(100, 800);
   // End $fn.scrollSpeed(step, speed, easing);
 
   // Window load_screen //
@@ -77,7 +77,7 @@ $(document).ready(function(){
       })
 
 
-      $(".prev, .prev_2, .prev_3").click(function(){ 
+      $(".prev").click(function(){ 
         owl.trigger('owl.prev');
       })
        $(".prev_2").click(function(){ 
@@ -165,7 +165,7 @@ $(document).ready(function(){
     //   $('.my-nav-respon').slideToggle("slow");
     // });
      $('.my-nav-respon ul li').click(function(){
-       $(this).children('ul').slideToggle();
+       $(this).children('ul').fadeToggle();
      });
    
      $('.hamburger').click(function(event) {
